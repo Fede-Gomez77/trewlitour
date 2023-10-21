@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!--aca comienza el menu de la pagina-->
+        <div class="menu container">
+
+            <img class="logo-1" src="imagenes/logoprima.png" alt="">
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Reservas</a></li>
+                    </ul>
+                </div>
+                <img class="logo-2" src="imagenes/logoprima.png" alt="">
+                <div class="menu-2">
+                    <ul>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                    <div class="socials">
+                        <a href="#">
+                            <div class="social">
+                                <img src="imagenes/s1.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="imagenes/s2.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="imagenes/s3.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--aca comienza el slider de la pagina de inicio-->
+        <div class="header-content container">
+
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>OMNIBUS</h1>
+                                <P>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Molestias possimus et repudiandae magni odit, modi nisi corporis eaque similique,
+                                </P>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Exterior</a>
+                                    <a href="#" class="btn-1">Interior</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="imagenes/omnibusfondo.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>MINIBUS</h1>
+                                <P>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Molestias possimus et repudiandae magni odit, modi nisi corporis eaque similique,
+                                </P>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Exterior</a>
+                                    <a href="#" class="btn-1">Interior</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="imagenes/minibusfonfo.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>COMBI</h1>
+                                <P>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    Molestias possimus et repudiandae magni odit, modi nisi corporis eaque similique,
+                                </P>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Exterior</a>
+                                    <a href="#" class="btn-1">Interior</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="imagenes/combifondo.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--botones para redirigir-->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+
+
+
+    </header>
+
+    <main class="products">
+        <div class="tabs container">
+            <!--en caso de querer mas opciones copoar desde input linea 143 hasta el div linea 211-->
+            <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
+            <label for="tab1">Servicios</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper1">
+                    <!--aca estan los servicios-->
+                    <div class="swiper-wrapper">
+                        <!--el wrapper wrappers se utiliza para mejorar la compatibilidad o interoperabilidad entre diferentes estructuras-->
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Disponible</h4>
+                                    <img src="imagenes/aeropuerto.jpg" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Traslado aeropuerto</h4>
+                                    <p>Traslado de pasajeros desde/hacia el hotel, domicilio particular, puerto,
+                                        aeropuerto o terminal de ómnibus. Interconexiones desde una terminal terrestre,
+                                        aérea o fluvial a otra con el fin de proseguir su viaje.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Disponible</h4>
+                                    <img src="imagenes/chofer.jpg" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Alquiler de vehiculo con Chofer</h4>
+                                    <p>Usted podrá contratar según su necesidad un vehículo a su entera disposición.
+                                        Dichos servicios se realizan por un mínimo de 3 horas consecutivas con un límite
+                                        de kilometraje libre.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Disponible</h4>
+                                    <img src="imagenes/ruta.jpg" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Turismo</h4>
+                                    <p>Eventos, excursiones, giras, paseos o vacaciones. Cualquiera sea el traslado de
+                                        personas que usted requiera nos encontramos a su disposición, ofreciéndole el
+                                        confort de nuestras modernas unidades de traslado, experiencia, honestidad y
+                                        cordialidad.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Disponible</h4>
+                                    <img src="imagenes/evento.jpg" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Logistica en Eventos</h4>
+                                    <p>Para brindar a sus invitados la comodidad y seguridad de no tener que conducir
+                                        antes y después del evento, le ofrecemos nuestra experiencia en logística de
+                                        transporte de personas para eventos sociales o corporativos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="info container">
+
+        <div class="info-img">
+            <img src="imagenes/flota1.jpg" alt="">
+        </div>
+
+        <div class="info-txt">
+            <h2>Informacion</h2>
+            <!--poner informacion de la empresa-->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum unde omnis totam commodi, ducimus
+                necessitatibus labore facere beatae ea modi debitis. Numquam quia aperiam quidem placeat molestiae quod
+                voluptate maxime.
+            </p>
+            <a href="#" class="btn-2">Mas informacion</a>
+
+        </div>
+
+    </section>
+<!--aca comienza una nueva seccion de horario-->
+    <section class="Horario de Atencion">
+        <div class="Horario-info">
+
+            <h2>Horario de Atencion</h2>
+            <div class="horario-txt">
+                <div class="txt">
+                    <h4>DIRECCION</h4>
+                    <p>
+                        Av. Bartolomé Mitre 6678, Wilde, Provincia de Buenos Aires, Argentina
+                    </p>
+                    <p>
+                        escribir mas info de la DIRECCIO
+                    </p>
+               </div>
+               <div class="txt">
+                  <h4>HORARIO</h4>
+                  <p>
+                    Lunes a Viernes de 9 am - 6 pm
+                  </p>
+                  <p>
+                    Sabados de 9 am - 1 pm
+                  </p>
+                  <p>
+                    Domingos cerrado
+                  </p>
+                </div>
+                <div class="txt">
+                   <h4>TELEFONO</h4>
+                   <p>
+                     celular +54115496246
+                   </p>
+                   <p>
+                     teleefono +54116219661
+                   </p>
+               </div>
+               <div class="txt">
+                <h4>Redes sociales</h4>
+                <div class="socials">
+                    <a href="#">
+                        <div class="social">
+                            <img src="imagenes/s1.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="social">
+                            <img src="imagenes/s2.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="social">
+                            <img src="imagenes/s3.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+              </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section>
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7800.808729382105!2d-58.3176132976756!3d-34.70931498886773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a332701f8318f7%3A0xdceba27733c76aad!2sAv.%20Bartolom%C3%A9%20Mitre%206678%2C%20B1875ABJ%20Wilde%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697747639187!5m2!1ses-419!2sar" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </section>
+
+
+    <footer class="footer container">
+
+        <img class="logo-2" src="imagenes/logoprima.png" alt="">
+        <div class="links">
+            <h4>Links</h4>
+            <ul>
+                <li><a href="#">links</a></li>
+                <li><a href="#">links</a></li>
+                <li><a href="#">links</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Links</h4>
+            <ul>
+                <li><a href="#">links</a></li>
+                <li><a href="#">links</a></li>
+                <li><a href="#">links</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Links</h4>
+            <div class="socials">
+                <a href="#">
+                    <div class="social">
+                        <img src="imagenes/s1.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="imagenes/s2.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="imagenes/s3.svg" alt="">
+                    </div>
+                </a>
+            </div>          
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
