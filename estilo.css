@@ -9,7 +9,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #63cef1, #2121f5);
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -19,17 +19,17 @@ body {
 }
 
 .swiper-button-prev::after {
-    font: 25px;
+    font: 35px;
 }
 .swiper-button-next::after {
-    font: 25px;
+    font: 35px;
 }
 
 .swiper-button-next {
-    color: #DB241B;
+    color: #000b02;
 }
 .swiper-button-prev {
-    color: #DB241B;
+    color: #000b02;
 }
 
 .swiper-pagination-bullet {
@@ -38,7 +38,7 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #db241b;
+    background-color: #e2cac9;
 }
 
 .menu {
@@ -99,16 +99,17 @@ body {
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 10px;
-    color: #352f2f;
+    color: #030905;
     display: block;
+    
 }
 
 .menu .navbar ul li a:hover {
-    color: #DB241B;
-}
+    color: #030905 }
 
 #menu {
     display: none;
+    align-content: end;
 }
 
 .menu-icono {
