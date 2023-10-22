@@ -33,7 +33,7 @@ body {
 }
 
 .swiper-pagination-bullet {
-    background-color: #291f80;
+    background-color: #302f35;
     opacity: 1;
 }
 
@@ -176,7 +176,7 @@ body {
 }
 
 .products {
-    background-color: #a8abd1;
+    background-color: #1b26c7;
 }
 
 .tabs {
@@ -194,6 +194,8 @@ body {
     cursor: pointer;
     color: #a7a7a7;
     font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
     transition: background ease 0.2s;
 }
 
@@ -211,6 +213,10 @@ body {
 .tabs input[type="radio"]:checked + label {
     border-bottom: 2px solid #DB241B;
     color: #ffffff;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
 }
 
 .product {
@@ -234,14 +240,15 @@ body {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 800;
-    border: 2px solid #555555;
+    border: 2px solid #DB241B;
     border-radius: 10px;
     margin-bottom: 50px;
 }
 
 .product-img img {
-    width: 150px;
-    height: 120px;
+    border-radius: 50px;
+    width: 200px;
+    height: 200px;
 }
 
 .product-txt {
@@ -319,13 +326,17 @@ body {
 }
 
 .horario {
+    background-image: url(imagenes/merce.webp);
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-position: center center; /* Centra la imagen en el elemento */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el elemento */
     padding: 100px 0px;
     background-color: #0d0d0d;
 }
 
 .horario-info h2 {
     font-size: 75px;
-    color: #FFFFFF;
+    color: #282bdb;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 50px;
@@ -337,12 +348,12 @@ body {
 }
 
 .txt {
-    color: #FFFFFF;
+    color: #3739a0;
 }
 
 .txt h4 {
     font-size: 18px;
-    color: #a7a7a7;
+    color: #282bdb;
     margin-bottom: 30px;
 }
 
@@ -360,7 +371,7 @@ body {
 }
 
 .links h4 {
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 25px;
 }
