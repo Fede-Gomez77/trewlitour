@@ -33,7 +33,7 @@ body {
 }
 
 .swiper-pagination-bullet {
-    background-color: #d3d2d2;
+    background-color: #352f2f;
     opacity: 1;
 }
 
@@ -99,7 +99,7 @@ body {
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 10px;
-    color: #FFFFFF;
+    color: #352f2f;
     display: block;
 }
 
@@ -136,14 +136,14 @@ body {
 }
 .slider-txt h1 {
     font-size: 70px;
-    color: #ffffff;
+    color: #352f2f;
     text-transform: uppercase;
     font-weight: 800;
 }
 
 .slider-txt p {
     font-size: 18px;
-    color: #a7a7a7;
+    color: #2e2929;
 }
 
 .botones {
@@ -153,8 +153,8 @@ body {
 .btn-1 {
     display: inline-block;
     padding: 15px 35px;
-    border: 2px solid #DB241B;
-    color: #FFFFFF;
+    border: 2px solid #ebe3e3;
+    color: #2b2626;
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -176,7 +176,7 @@ body {
 }
 
 .products {
-    background-color: #0d0d0d;
+    background-color: #2532f0;
 }
 
 .tabs {
