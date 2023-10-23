@@ -7,7 +7,8 @@
     text-decoration: none;
     list-style: none;
 }
-
+/*En la parte de CSS por ahora solo modifiqué todo lo que estaba en color rojo, para que quede combinado  
+con los colores de la página*/
 body {
     background: linear-gradient(to bottom, #63cef1, #2121f5);
     font-family: 'Poppins', sans-serif;
@@ -26,10 +27,10 @@ body {
 }
 
 .swiper-button-next {
-    color: #DB241B;
+    color: #2121f5;
 }
 .swiper-button-prev {
-    color: #DB241B;
+    color: #2121f5;
 }
 
 .swiper-pagination-bullet {
@@ -38,7 +39,7 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #db241b;
+    background-color: #2121f5;
 }
 
 .menu {
@@ -79,12 +80,12 @@ body {
     margin: 0 10px;
     height: 40px;
     width: 40px;
-    border: 1px solid #DB241B;
+    border: 1px solid #2121f5;
     border-radius: 50%;
 }
 
 .social:hover {
-    background-color: #DB241B;
+    background-color: #2121f5;
 }
 
 .social img {
@@ -163,7 +164,7 @@ body {
 }
 
 .btn-1:hover {
-    background-color: #DB241B;
+    background-color: #2121f5;
 }
 
 .slider-img {
@@ -211,7 +212,7 @@ body {
     display: none;
 }
 .tabs input[type="radio"]:checked + label {
-    border-bottom: 2px solid #DB241B;
+    border-bottom: 2px solid #2121f5;
     color: #ffffff;
 }
 
@@ -240,7 +241,7 @@ body {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 800;
-    border: 2px solid #DB241B;
+    border: 2px solid #2121f5;
     border-radius: 10px;
     margin-bottom: 50px;
 }
@@ -314,7 +315,7 @@ body {
 .btn-2 {
     display: inline-block;
     padding: 15px 35px;
-    background-color: #DB241B;
+    background-color: #2121f5;
     color: #FFFFFF;
     font-weight: 800;
     text-transform: uppercase;
@@ -322,7 +323,7 @@ body {
 }
 
 .btn-2:hover {
-    background-color: #ab1c15;
+    background-color: #63cef1;
 }
 
 .horario {
