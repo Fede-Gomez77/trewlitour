@@ -7,10 +7,9 @@
     text-decoration: none;
     list-style: none;
 }
-/*En la parte de CSS por ahora solo modifiqué todo lo que estaba en color rojo, para que quede combinado  
-con los colores de la página*/
+
 body {
-    background: linear-gradient(to bottom, #63cef1, #2121f5);
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -20,26 +19,26 @@ body {
 }
 
 .swiper-button-prev::after {
-    font: 25px;
+    font: 35px;
 }
 .swiper-button-next::after {
-    font: 25px;
+    font: 35px;
 }
 
 .swiper-button-next {
-    color: #2121f5;
+    color: #000b02;
 }
 .swiper-button-prev {
-    color: #2121f5;
+    color: #000b02;
 }
 
 .swiper-pagination-bullet {
-    background-color: #302f35;
+    background-color: #291f80;
     opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #2121f5;
+    background-color: #e2cac9;
 }
 
 .menu {
@@ -80,12 +79,12 @@ body {
     margin: 0 10px;
     height: 40px;
     width: 40px;
-    border: 1px solid #2121f5;
+    border: 1px solid #DB241B;
     border-radius: 50%;
 }
 
 .social:hover {
-    background-color: #2121f5;
+    background-color: #DB241B;
 }
 
 .social img {
@@ -100,16 +99,17 @@ body {
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 10px;
-    color: #352f2f;
+    color: #030905;
     display: block;
+    
 }
 
 .menu .navbar ul li a:hover {
-    color: #DB241B;
-}
+    color: #030905 }
 
 #menu {
     display: none;
+    align-content: end;
 }
 
 .menu-icono {
@@ -164,7 +164,7 @@ body {
 }
 
 .btn-1:hover {
-    background-color: #2121f5;
+    background-color: #DB241B;
 }
 
 .slider-img {
@@ -177,7 +177,7 @@ body {
 }
 
 .products {
-    background-color: #1b26c7;
+    background-color: #a8abd1;
 }
 
 .tabs {
@@ -195,8 +195,6 @@ body {
     cursor: pointer;
     color: #a7a7a7;
     font-weight: 700;
-    font-size: 20px;
-    text-transform: uppercase;
     transition: background ease 0.2s;
 }
 
@@ -212,12 +210,8 @@ body {
     display: none;
 }
 .tabs input[type="radio"]:checked + label {
-    border-bottom: 2px solid #2121f5;
+    border-bottom: 2px solid #DB241B;
     color: #ffffff;
-}
-
-.tabs input[type="radio"]:checked + label + .tab {
-    display: block;
 }
 
 .product {
@@ -241,15 +235,14 @@ body {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 800;
-    border: 2px solid #2121f5;
+    border: 2px solid #555555;
     border-radius: 10px;
     margin-bottom: 50px;
 }
 
 .product-img img {
-    border-radius: 50px;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 120px;
 }
 
 .product-txt {
@@ -315,7 +308,7 @@ body {
 .btn-2 {
     display: inline-block;
     padding: 15px 35px;
-    background-color: #2121f5;
+    background-color: #DB241B;
     color: #FFFFFF;
     font-weight: 800;
     text-transform: uppercase;
@@ -323,21 +316,17 @@ body {
 }
 
 .btn-2:hover {
-    background-color: #63cef1;
+    background-color: #ab1c15;
 }
 
 .horario {
-    background-image: url(imagenes/merce.webp);
-    background-repeat: no-repeat; /* Evita la repetición de la imagen */
-    background-position: center center; /* Centra la imagen en el elemento */
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el elemento */
     padding: 100px 0px;
     background-color: #0d0d0d;
 }
 
 .horario-info h2 {
     font-size: 75px;
-    color: #282bdb;
+    color: #FFFFFF;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 50px;
@@ -349,12 +338,12 @@ body {
 }
 
 .txt {
-    color: #3739a0;
+    color: #FFFFFF;
 }
 
 .txt h4 {
     font-size: 18px;
-    color: #282bdb;
+    color: #a7a7a7;
     margin-bottom: 30px;
 }
 
@@ -372,7 +361,7 @@ body {
 }
 
 .links h4 {
-    color: #ffffff;
+    color: #FFFFFF;
     text-transform: uppercase;
     margin-bottom: 25px;
 }
