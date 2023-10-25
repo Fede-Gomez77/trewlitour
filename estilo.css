@@ -74,6 +74,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 /*tamaño de las flechas*/
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -89,6 +90,7 @@ body {
 .swiper-button-prev {
     color: #0c3483;
 }
+
 /*color de los puntitos del slider*/
 .swiper-pagination-bullet {
     background-color: #0c3483;
@@ -98,12 +100,12 @@ body {
 .swiper-pagination-bullet-active {
     background-color: #e2cac9;
 }
-
 /*sector del slider principal*/
 .header-content {
     margin-top: 200px;
     padding-bottom: 50px;
 }
+
 /*alineacion de texto del slider*/
 .slider {
     display: flex;
@@ -114,6 +116,7 @@ body {
     margin-left: 85px;
     width: 50%;
 }
+
 /*color y tamaño del texto del slider*/
 .slider-txt h1 {
     font-size: 70px;
@@ -150,6 +153,7 @@ body {
     background-color: #0c3483;
     color:#ebe3e3
 }
+
 /*tamaño y posicion de las imagenes del slider*/
 .slider-img {
     width: 50%;
@@ -236,24 +240,27 @@ body {
 .products {
     background-color: #a8abd1;
 }
+
 /*tamaño de la seccion servicio*/
 .tabs {
     display: flex;
     flex-wrap: wrap;
     padding: 100px 0px;
 }
+
 /*seccion de los servicios*/
 .tabs label {
     width: 15%;
     order: 1;
     display: block;
-    padding: 20px ;
+    padding: 20px;
     text-align: center;
     cursor: pointer;
     color: #a7a7a7;
     font-weight: 700;
     transition: background ease 0.2s;
 }
+
 /*espacios del menu de los servicios en caso de poner mas opciones*/
 .tabs .tab {
     order: 99;
@@ -266,11 +273,13 @@ body {
 .tabs input[type="radio"] {
     display: none;
 }
+
 /*tamaño y color de la linea que subrraya a la palabra servicio*/
-.tabs input[type="radio"]:checked + label {
+.tabs input[type="radio"]:checked+label {
     border-bottom: 2px solid #2b2626;
     color: #ffffff;
 }
+
 /*ubicacion de los distintos tipos de servicio charter, turismo etc*/
 .product {
     display: flex;
@@ -284,6 +293,7 @@ body {
     width: 50%;
     text-align: left;
 }
+
 /*texto y circulo de la opcion "DISPONIBLE"*/
 .product-img h4 {
     display: inline-block;
@@ -297,11 +307,13 @@ body {
     border-radius: 10px;
     margin-bottom: 50px;
 }
+
 /*seccion de las imagenes de los servicios*/
 .product-img img {
     width: 150px;
     height: 120px;
 }
+
 /*product-txt es toda la seccion del texto de los servicios*/
 .product-txt {
     width: 50%;
@@ -328,7 +340,8 @@ body {
     font-size: 18px;
 
 }
-/*seccion de la la ubicacion y tamaños de la informacion*/
+
+/*seccion de la ubicacion y tamaños de la informacion*/
 .info {
     padding: 100px 0px;
     display: flex;
@@ -338,16 +351,19 @@ body {
 .info-img {
     width: 100%;
 }
+
 /*tamaño de la imagen de la informacion*/
 .info-img img {
     width: 550px;
     height: 300px;
     border-radius: 40px;
 }
+
 /*para que la seccion se va correctamente*/
 .info-txt {
     width: 50%;
 }
+
 /*tamaño y color de la palabra informacion*/
 .info-txt h2 {
     font-size: 75px;
@@ -356,12 +372,14 @@ body {
     text-transform: uppercase;
     margin-bottom: 25px;
 }
-/*color y tamaño del parrafo*/ 
+
+/*color y tamaño del parrafo*/
 .info-txt p {
     font-size: 18px;
     color: #a7a7a7;
     margin-bottom: 50px;
 }
+
 /*color y tamaño del circulo que rodea al boton "MAS INFORMACION*/
 .btn-2 {
     display: inline-block;
@@ -372,15 +390,18 @@ body {
     text-transform: uppercase;
     border-radius: 50px;
 }
+
 /*color del circulo cuando se posiciona el cursor*/
 .btn-2:hover {
     background-color: #8f7e7e;
 }
+
 /*seccion de horario, color tamaño posicion etc*/
 .horario {
     padding: 100px 0px;
     background-color: #2b2626;
 }
+
 /*seccion de horario*/
 .horario-info h2 {
     font-size: 75px;
@@ -389,6 +410,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 50px;
 }
+
 /*separa los textos*/
 .horario-txt {
     display: flex;
@@ -411,6 +433,7 @@ body {
     font-weight: 600;
     margin-bottom: 15px;
 }
+
 /*seccion de los link.. ubicacion y separacion */
 .footer {
     padding: 100px 0px;
@@ -423,6 +446,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 25px;
 }
+
 /*seccion de los enlaces*/
 .links ul li a {
     color: #FFFFFF;
@@ -430,6 +454,7 @@ body {
     margin-bottom: 5px;
     display: inline-block;
 }
+
 /*seccion del responsive*/
 @media(max-width: 991px) {
     .menu {
@@ -442,7 +467,8 @@ body {
     }
 
     .logo-1 {
-        width: 100px;
+        width: 600px;
+        align-self: flex-start;
     }
 
     .logo-2 {
@@ -452,7 +478,8 @@ body {
     .menu label {
         display: initial;
     }
-/*color y posicion del menu al apretar el icono*/
+
+    /*color y posicion del menu al apretar el icono*/
     .menu .navbar {
         position: absolute;
         top: 100%;
@@ -461,20 +488,23 @@ body {
         background-color: #756767;
         display: none;
     }
-/*el menu cubre todo el ancho cuando se le hace click*/
+
+    /*el menu cubre todo el ancho cuando se le hace click*/
     .menu .navbar ul li {
         width: 100%;
     }
-/*para que funciones el menu*/
-    #menu:checked ~ .navbar {
-        display: initial; 
+
+    /*para que funciones el menu*/
+    #menu:checked~.navbar {
+        display: initial;
     }
 
     .header-content {
         padding: 30px;
         margin-top: 100px;
     }
-/*seccion del slider para acomodar el tamaño cuando esta responsive*/
+
+    /*seccion del slider para acomodar el tamaño cuando esta responsive*/
     .slider {
         flex-direction: column;
     }
@@ -489,7 +519,8 @@ body {
     .slider-txt h1 {
         font-size: 50px;
     }
-/*tamaño del texto*/
+
+    /*tamaño del texto*/
     .slider-txt p {
         font-size: 16px;
     }
@@ -503,19 +534,23 @@ body {
         width: 100%;
         text-align: center;
     }
-/*tamaño de las imagenes del slider*/
+
+    /*tamaño de las imagenes del slider*/
     .slider-img img {
         margin-right: 0px;
         width: 300px;
     }
-/*este codigo hace que los bullets (puntos) no queden muy pegados a la imagen*/
-    .swiper-horizontal > .swiper-pagination-bullets,
-    .swiper-pagination-bullets,.swiper-pagination-pagination-horizontal,
+
+    /*este codigo hace que los bullets (puntos) no queden muy pegados a la imagen*/
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets,
+    .swiper-pagination-pagination-horizontal,
     .swiper-pagination-custom,
     .swiper-pagination-fraction {
         bottom: -7px;
     }
-/*seccion de los servicios tamaño etc*/
+
+    /*seccion de los servicios tamaño etc*/
     .tabs {
         padding: 50px 30px;
     }
@@ -523,7 +558,8 @@ body {
     .tabs label {
         width: 33%;
     }
-/*seccion de la informacion tmaño etc*/
+
+    /*seccion de la informacion tamaño etc*/
     .info {
         padding: 30px;
         flex-direction: column;
@@ -533,13 +569,15 @@ body {
         width: 100%;
         text-align: center;
     }
-/*tamaño de la imagen de servicio*/
+
+    /*tamaño de la imagen de servicio*/
     .info-img img {
         width: 400px;
         height: 200px;
         margin-bottom: 25px;
     }
-/*tamaño de titulo y los textos de servicio*/
+
+    /*tamaño de titulo y los textos de servicio*/
     .info-txt {
         width: 100%;
         text-align: center;
@@ -556,7 +594,8 @@ body {
     .btn-1 {
         font-size: 16px;
     }
-/*tamaño de la seccion de horario*/
+
+    /*tamaño de la seccion de horario*/
     .horario {
         padding: 30px;
         text-align: center;
@@ -570,7 +609,8 @@ body {
     .horario-txt {
         flex-direction: column;
     }
-/*tamaño y ubicacion de las redes sociales de los enlaces*/
+
+    /*tamaño y ubicacion de las redes sociales de los enlaces*/
     .socials {
         justify-content: center;
     }
@@ -584,9 +624,9 @@ body {
         flex-direction: column;
         text-align: center;
     }
-/*ubicacion de los enlaces*/
+
+    /*ubicacion de los enlaces*/
     .links h4 {
         margin: 25px 0px 10px 0px;
     }
 }
-
