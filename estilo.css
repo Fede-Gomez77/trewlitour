@@ -1,18 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
 
-* {
+/* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-}
+}*/
 
 /*  color de fondo de pagina y modelo de letra*/
 body {
+    margin: 0;
+    padding: 0;
     background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
     font-family: 'Poppins', sans-serif;
+    
 }
+/*-------------------------- Navbar -------------------------------------------*/
+.menu {
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar {
+    background-color: #0c3483; /* Color de fondo */
+    position: fixed; /* Fijar la barra en la parte superior de la página */
+    width: 100%; /* Ancho completo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Ajusta los valores de padding para eliminar los espacios en los bordes superior e izquierdo */
+    height: 60px; /* Altura de la barra */
+    z-index: 9999;
+}
+
+.navbar a {
+    color: white; /* Color de texto para los enlaces */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    margin: 0 20px; /* Espaciado entre enlaces */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Ajusta el margen derecho del logo para separarlo del borde izquierdo */
+.navbar .logo-2 {
+    width: 100px; /* Ancho del logo */
+    height: auto;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
+    margin-right: 20px; /* Ajusta este valor según sea necesario */
+}
+
+/* Ajusta el margen izquierdo de .menu para centrar los elementos */
+.navbar .menu {
+    margin-left: auto; /* Empujará los elementos al centro */
+}
+
+.navbar .iconos-redes {
+    margin-left: auto; /* Empujará los iconos hacia la derecha */
+    margin-right: 20px;
+}
+
+.navbar .iconos-redes a {
+    color: white;
+    text-decoration: none;
+    margin-left: 0; 
+    font-size: 20px;
+}
+
+/*----------------------- Header Vehiculos deslizable --------------------*/
 
 /* sirve para centrar las class*/
 .container {
@@ -21,126 +76,30 @@ body {
 }
 
 /*tamaño de las flechas*/
-.swiper-button-prev::after {
-    font: 35px;
-}
-
+.swiper-button-prev::after,
 .swiper-button-next::after {
     font: 35px;
 }
 
-/*color de las flechas*/
-.swiper-button-next {
-    color: #000b02;
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+    font-size: 50px;
 }
-
+/*color de las flechas*/
+.swiper-button-next,
 .swiper-button-prev {
-    color: #000b02;
+    color: #0c3483;
 }
 
 /*color de los puntitos del slider*/
 .swiper-pagination-bullet {
-    background-color: #291f80;
+    background-color: #0c3483;
     opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
     background-color: #e2cac9;
 }
-
-/*seccion del menu de inicio*/
-.menu {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    z-index: 1000;
-}
-
-.navbar {
-    display: flex;
-}
-
-.menu-1 {
-    margin-right: 180px;
-}
-
-.menu-2 {
-    margin-left: 180px;
-    display: flex;
-    align-items: center;
-}
-
-/*seccion de logos*/
-.logo-1 {
-    width: 0;
-}
-
-.logo-2 {
-    width: 200px;
-}
-
-/*seccion de logos de redes sociales*/
-.socials {
-    display: flex;
-}
-
-/*circulo de que rodean los logos de las redes sociales*/
-.social {
-    margin: 0 10px;
-    height: 40px;
-    width: 40px;
-    border: 1px solid #DB241B;
-    border-radius: 50%;
-}
-
-/*color para cada vez que se posiciona el cursor en las redes*/
-.social:hover {
-    background-color: #DB241B;
-}
-
-/*posicionamiento de los logos de redes dentro de los circulos*/
-.social img {
-    margin: 8px 0 0 10px;
-}
-
-/*para deslizar el menu hacia la izquierda*/
-.menu .navbar ul li {
-    position: relative;
-    float: left;
-}
-
-.menu .navbar ul li a {
-    font-size: 18px;
-    padding: 10px;
-    color: #030905;
-    display: block;
-
-}
-
-/*cambio de color del menu cada vez que se posiciona el cursor*/
-.menu .navbar ul li a:hover {
-    color: #ffffff
-}
-
-#menu {
-    display: none;
-    align-content: end;
-}
-
-/*tamaño del icono del inicio cuando se encuentra responsive*/
-.menu-icono {
-    width: 25px;
-}
-
-/*el icono se esconde cuando esta en modo escritorio*/
-.menu label {
-    cursor: pointer;
-    display: none;
-}
-
 /*sector del slider principal*/
 .header-content {
     margin-top: 200px;
@@ -189,9 +148,10 @@ body {
     border-radius: 50px;
 }
 
-/*color del circulo al posicionar el cursor*/
+/*color del circulo al posicinar el cursor*/
 .btn-1:hover {
-    background-color: #ffffff;
+    background-color: #0c3483;
+    color:#ebe3e3
 }
 
 /*tamaño y posicion de las imagenes del slider*/
@@ -204,6 +164,78 @@ body {
     width: 550px;
 }
 
+/*sector del slider principal*/
+.header-content {
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+/*alineacion de texto del slider*/
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+.slider-txt {
+    margin-left: 85px;
+    width: 50%;
+}
+/*color y tamaño del texto del slider*/
+.slider-txt h1 {
+    font-size: 70px;
+    color: #352f2f;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.slider-txt p {
+    font-size: 18px;
+    color: #2e2929;
+}
+
+/*boton de galeria*/
+.botones {
+    margin-top: 50px;
+}
+
+/*forma y color del circulo que rodea al boton de galeria*/
+.btn-1 {
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid #ebe3e3;
+    color: #2b2626;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+/*color del circulo al posicinar el cursor*/
+.btn-1:hover {
+    background-color: #0c3483;
+    color:#ebe3e3
+}
+/*tamaño y posicion de las imagenes del slider*/
+.slider-img {
+    width: 50%;
+}
+
+.slider-img img {
+    margin-right: 225px;
+    width: 550px;
+}
+
+/*------------------------------------------------*/
+
+/*tamaño del icono del inicio cuando se encuentra responsive*/
+.menu-icono {
+    width: 25px;
+}
+/*el icono se esconde cuando esta en modo escritorio*/
+.menu label {
+    cursor: pointer;
+    display: none;
+}
 /*color de fondo de la seccion de servicios*/
 .products {
     background-color: #a8abd1;
