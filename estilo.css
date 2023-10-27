@@ -382,36 +382,46 @@ textarea {
     margin-right: 50px;
 }
   /*------------------Galeria-----------------------*/
- 
-  .galeria-container{
+  /* Establecer estilos para el cuerpo de la página y el contenedor */
+/*body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}*/
+
+/* Establecer estilos para el slider de la galería */
+.galeria-container{
     background-color:#c3c6e8 ;
-    padding: 100px;
+    padding: 100px; 
     align-items: center;
     justify-content: center;
-    height: 100vh;
-  }
-  
-  .galeria-slider {
-    display: flex;
-    width: 800px;
-    height: 500px;
-    margin-top: 20px;
-    
   }
 
-  .galeria-slider img {
-    width: 0px;
+.galeria-slider {
+    display: flex;
+    width: 900px; /* 100% del ancho de la pantalla */
+    
+    height: 600px; /* Establece la altura deseada */
+    margin: 0 auto; /* Centra el slider horizontalmente */
+}
+
+/* Establecer estilos para las imágenes en el slider */
+.galeria-slider img {
+    width: 0;
     flex-grow: 1;
     object-fit: cover;
     filter: brightness(80%);
     transition: .7s ease;
-  }
+}
 
-  .galeria-slider img:hover {
-    width: 650px;
+/* Establecer estilos al pasar el mouse sobre las imágenes */
+.galeria-slider img:hover {
+    width: 100%; /* 100% del ancho del contenedor padre (.galeria-slider) */
     opacity: 1;
     filter: brightness(130%);
-  }
+}
+
 /*--------------------Footer/Contacto -----------------------------*/
 
 /* color tamaño posicion etc*/
