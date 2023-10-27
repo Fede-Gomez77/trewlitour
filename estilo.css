@@ -8,7 +8,7 @@
     list-style: none;
 }*/
 
-/*  color de fondo de pagina y modelo de letra*/
+/*  color de fondo de página y fuente*/
 body {
     margin: 0;
     padding: 0;
@@ -56,7 +56,7 @@ body {
 }
 
 .navbar .iconos-redes {
-    margin-left: auto; /* Empujará los iconos hacia la derecha */
+    margin-left: auto; /* Empujará los íconos hacia la derecha */
     margin-right: 20px;
 }
 
@@ -67,7 +67,7 @@ body {
     font-size: 20px;
 }
 
-/*----------------------- Header Vehiculos deslizable --------------------*/
+/*----------------------- Header Vehículos deslizable --------------------*/
 
 /* sirve para centrar las class*/
 .container {
@@ -106,7 +106,7 @@ body {
     padding-bottom: 50px;
 }
 
-/*alineacion de texto del slider*/
+/*alineación de texto del slider*/
 .slider {
     display: flex;
     align-items: center;
@@ -130,12 +130,12 @@ body {
     color: #2e2929;
 }
 
-/*boton de galeria*/
+/*botón de galeria*/
 .botones {
     margin-top: 50px;
 }
 
-/*forma y color del circulo que rodea al boton de galeria*/
+/*forma y color del círculo que rodea al botón de galeria*/
 .btn-1 {
     display: inline-block;
     padding: 15px 35px;
@@ -148,13 +148,13 @@ body {
     border-radius: 50px;
 }
 
-/*color del circulo al posicinar el cursor*/
+/*color del círculo al posicionar el cursor*/
 .btn-1:hover {
     background-color: #0c3483;
     color:#ebe3e3
 }
 
-/*tamaño y posicion de las imagenes del slider*/
+/*tamaño y posición de las imágenes del slider*/
 .slider-img {
     width: 50%;
 }
@@ -169,7 +169,7 @@ body {
     margin-top: 100px;
     padding-bottom: 50px;
 }
-/*alineacion de texto del slider*/
+/*alineación de texto del slider*/
 .slider {
     display: flex;
     align-items: center;
@@ -192,12 +192,12 @@ body {
     color: #2e2929;
 }
 
-/*boton de galeria*/
+/*botón de galeria*/
 .botones {
     margin-top: 50px;
 }
 
-/*forma y color del circulo que rodea al boton de galeria*/
+/*forma y color del círculo que rodea al botón de galeria*/
 .btn-1 {
     display: inline-block;
     padding: 15px 35px;
@@ -210,12 +210,12 @@ body {
     border-radius: 50px;
 }
 
-/*color del circulo al posicinar el cursor*/
+/*color del círculo al posicionar el cursor*/
 .btn-1:hover {
     background-color: #0c3483;
     color:#ebe3e3
 }
-/*tamaño y posicion de las imagenes del slider*/
+/*tamaño y posición de las imágenes del slider*/
 .slider-img {
     width: 50%;
 }
@@ -227,18 +227,18 @@ body {
 
 /*------------------------------------------------*/
 
-/*tamaño del icono del inicio cuando se encuentra responsive*/
+/*tamaño del ícono del inicio cuando se encuentra responsive*/
 .menu-icono {
     width: 25px;
 }
-/*el icono se esconde cuando esta en modo escritorio*/
+/*el ícono se esconde cuando está en modo escritorio*/
 .menu label {
     cursor: pointer;
     display: none;
 }
 /*-----------------------Servicios-----------------------*/
 
-/*color de fondo de la seccion de servicios*/
+/*color de fondo de la sección de servicios*/
 /* Estilo para la sección de servicios */
 .products {
     background-color: #a8abd1;
@@ -267,8 +267,8 @@ body {
 
 /* Estilos para la imagen en las tarjetas */
 .service-card i {
-    font-size: 24px; /* Tamaño del icono */
-    color: #007bff; /* Color del icono */
+    font-size: 24px; /* Tamaño del ícono */
+    color: #007bff; /* Color del ícono */
 }
 
 /* Estilos para el título y descripción en las tarjetas */
@@ -283,7 +283,7 @@ body {
 
 /*---------------------Información----------------------------*/
 
-/*seccion de la ubicacion y tamaños de la informacion*/
+/*sección de la ubicación y tamaños de la información*/
 .info {
     padding: 100px 0px;
     display: flex;
@@ -294,19 +294,19 @@ body {
     width: 100%;
 }
 
-/*tamaño de la imagen de la informacion*/
+/*tamaño de la imagen de la información*/
 .info-img img {
     width: 550px;
     height: 300px;
     border-radius: 40px;
 }
 
-/*para que la seccion se va correctamente*/
+/*para que la sección se vea correctamente*/
 .info-txt {
     width: 50%;
 }
 
-/*tamaño y color de la palabra informacion*/
+/*tamaño y color de la palabra información*/
 .info-txt h2 {
     font-size: 75px;
     color: #ffffff;
@@ -315,14 +315,14 @@ body {
     margin-bottom: 25px;
 }
 
-/*color y tamaño del parrafo*/
+/*color y tamaño del párrafo*/
 .info-txt p {
     font-size: 18px;
-    color: #a7a7a7;
+    color: #050a36;
     margin-bottom: 50px;
 }
 
-/*color y tamaño del circulo que rodea al boton "MAS INFORMACION*/
+/*color y tamaño del círculo que rodea al botón "MAS INFORMACION*/
 .btn-2 {
     display: inline-block;
     padding: 15px 35px;
@@ -333,18 +333,18 @@ body {
     border-radius: 50px;
 }
 
-/*color del circulo cuando se posiciona el cursor*/
+/*color del círculo cuando se posiciona el cursor*/
 .btn-2:hover {
     background-color: #8f7e7e;
 }
 
-/*seccion de horario, color tamaño posicion etc*/
+/*sección de horario, color tamaño posición etc*/
 .horario {
     padding: 100px 0px;
     background-color: #2b2626;
 }
 
-/*seccion de horario*/
+/*sección de horario*/
 .horario-info h2 {
     font-size: 75px;
     color: #FFFFFF;
@@ -369,6 +369,13 @@ body {
     margin-bottom: 30px;
 }
 
+.txt h5 {
+    font-size: 18px;
+    color:#0c3483;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
 .txt p {
     font-size: 18px;
     text-transform: uppercase;
@@ -376,7 +383,7 @@ body {
     margin-bottom: 15px;
 }
 
-/*seccion de los link.. ubicacion y separacion */
+/*sección de los links.. ubicación y separación */
 .footer {
     padding: 100px 0px;
     display: flex;
@@ -389,7 +396,7 @@ body {
     margin-bottom: 25px;
 }
 
-/*seccion de los enlaces*/
+/*sección de los enlaces*/
 .links ul li a {
     color: #FFFFFF;
     font-size: 16px;
@@ -397,7 +404,7 @@ body {
     display: inline-block;
 }
 
-/*seccion del responsive*/
+/*sección del responsive*/
 @media(max-width: 991px) {
     .menu {
         padding: 20px;
@@ -421,7 +428,7 @@ body {
         display: initial;
     }
 
-    /*color y posicion del menu al apretar el icono*/
+    /*color y posición del menú al apretar el ícono*/
     .menu .navbar {
         position: absolute;
         top: 100%;
@@ -431,12 +438,12 @@ body {
         display: none;
     }
 
-    /*el menu cubre todo el ancho cuando se le hace click*/
+    /*el menú cubre todo el ancho cuando se le hace clic*/
     .menu .navbar ul li {
         width: 100%;
     }
 
-    /*para que funciones el menu*/
+    /*para que funcione el menú*/
     #menu:checked~.navbar {
         display: initial;
     }
@@ -446,7 +453,7 @@ body {
         margin-top: 100px;
     }
 
-    /*seccion del slider para acomodar el tamaño cuando esta responsive*/
+    /*sección del slider para acomodar el tamaño cuando está responsive*/
     .slider {
         flex-direction: column;
     }
@@ -477,13 +484,13 @@ body {
         text-align: center;
     }
 
-    /*tamaño de las imagenes del slider*/
+    /*tamaño de las imágenes del slider*/
     .slider-img img {
         margin-right: 0px;
         width: 300px;
     }
 
-    /*este codigo hace que los bullets (puntos) no queden muy pegados a la imagen*/
+    /*este código hace que los bullets (puntos) no queden muy pegados a la imagen*/
     .swiper-horizontal>.swiper-pagination-bullets,
     .swiper-pagination-bullets,
     .swiper-pagination-pagination-horizontal,
@@ -492,7 +499,7 @@ body {
         bottom: -7px;
     }
 
-    /*seccion de los servicios tamaño etc*/
+    /*sección de los servicios tamaño etc*/
     .tabs {
         padding: 50px 30px;
     }
@@ -501,7 +508,7 @@ body {
         width: 33%;
     }
 
-    /*seccion de la informacion tamaño etc*/
+    /*sección de la información tamaño etc*/
     .info {
         padding: 30px;
         flex-direction: column;
@@ -519,7 +526,7 @@ body {
         margin-bottom: 25px;
     }
 
-    /*tamaño de titulo y los textos de servicio*/
+    /*tamaño de título y los textos de servicio*/
     .info-txt {
         width: 100%;
         text-align: center;
@@ -537,7 +544,7 @@ body {
         font-size: 16px;
     }
 
-    /*tamaño de la seccion de horario*/
+    /*tamaño de la sección de horario*/
     .horario {
         padding: 30px;
         text-align: center;
@@ -552,7 +559,7 @@ body {
         flex-direction: column;
     }
 
-    /*tamaño y ubicacion de las redes sociales de los enlaces*/
+    /*tamaño y ubicación de las redes sociales de los enlaces*/
     .socials {
         justify-content: center;
     }
@@ -567,7 +574,7 @@ body {
         text-align: center;
     }
 
-    /*ubicacion de los enlaces*/
+    /*ubicación de los enlaces*/
     .links h4 {
         margin: 25px 0px 10px 0px;
     }
