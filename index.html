@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script> <!--Hace funcionar el carrusel de vehículos-->
 </head>
 
 <body>
@@ -25,11 +27,10 @@
             </div>
             <!-- alt= "Se agrega una descripción de la imagen, para el caso que no sea pueda mostrar, o para personas con capacidades diferentes" -->
 
-            <!--<input type="checkbox" id="menu" />-->
-            <!--Esto lo comenté porque no sé que es ni que hace ya que le falta el cierre(RCZ)-->
-            <!--<label for="menu">
+            <input type="checkbox" id="menu" /><!--le falta el cierre(RCZ)-->
+            <label for="menu">
                 <img src="imagenes/menu.png" class="menu-icono" alt="">
-            </label>-->
+            </label>
             <!--Esto también lo comenté para ver a que pertenecía y no noté ningún cambio(RCZ)-->
             <!--Román, esto era el menú desplegable, que no recuerdo si funcionaba, para que se hagan las tres rayitas, cuando se achica la pantalla, o abrimos la pág en el cel o tablet-->
             <div class="menu">
@@ -73,6 +74,85 @@
                                     <img src="imagenes/omnibusfondo.jpg" alt="">
                                 </div>
                             </div>
+            </label>
+                <!--Román, esto era el menú desplegable, que no recuerdo si funcionaba, para que se hagan las tres rayitas, cuando se achica la pantalla, o abrimos la pág en el cel o tablet-->
+                <div class="menu">
+                    <a href="index.html" class="home-link">Inicio</a>
+                    <a href="index.html#servicios">Servicios</a>
+                    <a href="reservas.html" target="_blank">Reservas</a>
+                    <a href="index.html#empresa">Empresa</a>
+                    <a href="index.html#contacto">Contacto</a>
+                </div>
+                <div class="iconos-redes"><!--Cada ícono redirige en una nueva pestaña a la página correspondiente-->
+                    <div class="social">
+                        <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/542235469303" target="blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </nav>
+            <!--acá comienza el slider de la página de inicio-->
+            <div class="menu container">
+                <div class="header-content container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider">
+                                    <div class="slider-txt">
+                                        <h1>OMNIBUS</h1>
+                                        <P>
+                                            Nuestro Omnibus ofrece un interior espacioso que permite a los pasajeros moverse cómodamente, 
+                                            sus asientos están diseñados para brindar comodidad durante trayectos largos y cuentan con 
+                                            sistemas de entretenimiento a bordo que incluyen pantallas de video y sistemas de audio para 
+                                            mantener a los pasajeros entretenidos durante el viaje.
+                                        </P>
+                                        <div class="botones">
+                                            <a href="#" class="btn-1">Galeria</a>
+                                        </div>
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="imagenes/omnibusfondo.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider">
+                                    <div class="slider-txt">
+                                        <h1>MINIBUS</h1>
+                                        <P>
+                                            Nuestro Minibus IVECO puede trasladar hasta 24 pasajeros y esta diseñado  incluso para 
+                                            personas con movilidad reducida,  cuenta con asientos muy comodos y soporte lumbar para 
+                                            mejorar la experiencia de los pasajeros.
+                                        </P>
+                                        <div class="botones">
+                                            <a href="#" class="btn-1">Galeria</a>
+                                        </div>
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="imagenes/minibusfonfo.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider">
+                                    <div class="slider-txt">
+                                        <h1>COMBI</h1>
+                                        <P>
+                                            Nuestra Mercede-Benz Sprinter cuenta con un espacio interior amplio ya que puede llevar 
+                                            hasta 20 pasajeros y debido a su tamaño y capacidad es ideal para el traslado de 
+                                            personas en trayectos de corta a media distancia.
+                                        </P>
+                                        <div class="botones">
+                                            <a href="#" class="btn-1">Galeria</a>
+                                        </div>
+                                    </div>
+                                    <div class="slider-img">
+                                        <img src="imagenes/combifondo.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--botones para redirigir-->
                         </div>
                         <div class="swiper-slide">
                             <div class="slider">
@@ -226,9 +306,6 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <script src="script.js"></script>
 
 </body>
 
