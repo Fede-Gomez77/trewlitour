@@ -17,6 +17,7 @@ body {
     
 }
 
+
 /*-------------------------- Navbar -------------------------------------------*/
 .menu {
     display: flex;
@@ -25,39 +26,39 @@ body {
 }
 
 .navbar {
-    background-color: #0c3483; /* Color de fondo */
-    position: fixed; /* Fijar la barra en la parte superior de la página */
-    width: 100%; /* Ancho completo */
+    background-color: #0c3483; 
+    position: fixed; 
+    width: 100%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Ajusta los valores de padding para eliminar los espacios en los bordes superior e izquierdo */
-    height: 60px; /* Altura de la barra */
+    padding: 0 20px; 
+    height: 60px; 
     z-index: 9999;
 }
 
 .navbar a {
-    color: white; /* Color de texto para los enlaces */
-    text-decoration: none; /* Sin subrayado en los enlaces */
-    margin: 0 20px; /* Espaciado entre enlaces */
-    font-weight: bold; /* Texto en negrita */
+    color: white; 
+    text-decoration: none; 
+    margin: 0 20px; 
+    font-weight: bold; 
 }
 
 /* Ajusta el margen derecho del logo para separarlo del borde izquierdo */
 .navbar .logo-2 {
-    width: 100px; /* Ancho del logo */
+    width: 100px; 
     height: auto;
-    cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
-    margin-right: 20px; /* Ajusta este valor según sea necesario */
+    cursor: pointer; 
+    margin-right: 20px; 
 }
 
 /* Ajusta el margen izquierdo de .menu para centrar los elementos */
 .navbar .menu {
-    margin-left: auto; /* Empujará los elementos al centro */
+    margin-left: auto; 
 }
 
 .navbar .iconos-redes {
-    margin-left: auto; /* Empujará los íconos hacia la derecha */
+    margin-left: auto; 
     margin-right: 20px;
 }
 
@@ -68,14 +69,13 @@ body {
     font-size: 20px;
 }
 
-/*----------------------- Header Vehículos deslizable --------------------*/
+/*----------------------- Header Vehiculos deslizable --------------------*/
 
 /* sirve para centrar las class*/
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 /*tamaño de las flechas*/
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -91,7 +91,6 @@ body {
 .swiper-button-prev {
     color: #0c3483;
 }
-
 /*color de los puntitos del slider*/
 .swiper-pagination-bullet {
     background-color: #0c3483;
@@ -101,13 +100,13 @@ body {
 .swiper-pagination-bullet-active {
     background-color: #e2cac9;
 }
+
 /*sector del slider principal*/
 .header-content {
     margin-top: 200px;
     padding-bottom: 50px;
 }
-
-/*alineación de texto del slider*/
+/*alineacion de texto del slider*/
 .slider {
     display: flex;
     align-items: center;
@@ -117,7 +116,6 @@ body {
     margin-left: 85px;
     width: 50%;
 }
-
 /*color y tamaño del texto del slider*/
 .slider-txt h1 {
     font-size: 70px;
@@ -131,12 +129,12 @@ body {
     color: #2e2929;
 }
 
-/*botón de galeria*/
+/*boton de galeria*/
 .botones {
     margin-top: 50px;
 }
 
-/*forma y color del círculo que rodea al botón de galeria*/
+/*forma y color del circulo que rodea al boton de galeria*/
 .btn-1 {
     display: inline-block;
     padding: 15px 35px;
@@ -149,13 +147,12 @@ body {
     border-radius: 50px;
 }
 
-/*color del círculo al posicionar el cursor*/
+/*color del circulo al posicinar el cursor*/
 .btn-1:hover {
     background-color: #0c3483;
     color:#ebe3e3
 }
-
-/*tamaño y posición de las imágenes del slider*/
+/*tamaño y posicion de las imagenes del slider*/
 .slider-img {
     width: 50%;
 }
@@ -170,7 +167,7 @@ body {
     margin-top: 100px;
     padding-bottom: 50px;
 }
-/*alineación de texto del slider*/
+/*alineacion de texto del slider*/
 .slider {
     display: flex;
     align-items: center;
@@ -193,12 +190,12 @@ body {
     color: #2e2929;
 }
 
-/*botón de galeria*/
+/*boton de galeria*/
 .botones {
     margin-top: 50px;
 }
 
-/*forma y color del círculo que rodea al botón de galeria*/
+/*forma y color del circulo que rodea al boton de galeria*/
 .btn-1 {
     display: inline-block;
     padding: 15px 35px;
@@ -209,14 +206,16 @@ body {
     text-transform: uppercase;
     margin-right: 20px;
     border-radius: 50px;
+    transition: transform 0.3s;
 }
 
-/*color del círculo al posicionar el cursor*/
+/*color del circulo al posicinar el cursor*/
 .btn-1:hover {
     background-color: #0c3483;
-    color:#ebe3e3
+    color:#ebe3e3;
+    transform: scale(1.05);
 }
-/*tamaño y posición de las imágenes del slider*/
+/*tamaño y posicion de las imagenes del slider*/
 .slider-img {
     width: 50%;
 }
@@ -228,21 +227,21 @@ body {
 
 /*------------------------------------------------*/
 
-/*tamaño del ícono del inicio cuando se encuentra responsive*/
+/*tamaño del icono del inicio cuando se encuentra responsive*/
 .menu-icono {
     width: 25px;
 }
-/*el ícono se esconde cuando está en modo escritorio*/
+/*el icono se esconde cuando esta en modo escritorio*/
 .menu label {
     cursor: pointer;
     display: none;
 }
 /*-----------------------Servicios-----------------------*/
 
-/*color de fondo de la sección de servicios*/
+/*color de fondo de la seccion de servicios*/
 /* Estilo para la sección de servicios */
 .products {
-    background-color: #a8abd1;
+    background-color: #e7e9ff;
     padding: 20px;
     text-align: center;
 }
@@ -252,6 +251,7 @@ body {
     display: flex;
     justify-content: center; /* Centra las tarjetas horizontalmente */
     gap: 20px; /* Espacio entre las tarjetas */
+    margin-bottom: 100px;
 }
 
 /* Estilo base para las tarjetas */
@@ -259,17 +259,22 @@ body {
     flex: 0 1 calc(20% - 20px); /* Ajusta el ancho de cada tarjeta según el espacio disponible */
     background-color: #fff; /* Color de fondo de las tarjetas */
     padding: 20px;
-    border-radius: 10px; /* Borde redondeado */
-    border: 1px solid #9c1717; /* Borde fino */
+    border-radius: 10px; 
+    border: 2px solid #1551c7; 
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6); 
     max-width: calc(20% - 20px);
+    transition: transform 0.3s; 
 }
 
+/* Cambia el tamaño de las tarjetas en hover */
+.service-card:hover {
+    transform: scale(1.05);
+}
 /* Estilos para la imagen en las tarjetas */
 .service-card i {
-    font-size: 24px; /* Tamaño del ícono */
-    color: #007bff; /* Color del ícono */
+    font-size: 26px; 
+    color: #007bff; 
 }
 
 /* Estilos para el título y descripción en las tarjetas */
@@ -282,130 +287,143 @@ body {
     font-size: 14px;
 }
 
-/*---------------------Información----------------------------*/
+.section-title{
+    font-size: 50px;
+    color: #352f2f;
+}
 
-/*sección de la ubicación y tamaños de la información*/
+/* Ajusta los estilos según tu diseño y preferencias */
+
+/*--------------------INFORMACION--------------*/
+
+/*seccion de la la ubicacion y tamaños de la informacion*/
+
 .info {
-    padding: 100px 0px;
+    padding: 80px 100px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: #c3c6e8 ;
+    
 }
 
 .info-img {
     width: 100%;
 }
-
-/*tamaño de la imagen de la información*/
+/*tamaño de la imagen de la informacion*/
 .info-img img {
-    width: 550px;
-    height: 300px;
+    width: 100%; 
+    max-width: 650px; 
+    height: auto; 
     border-radius: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
-
-/*para que la sección se vea correctamente*/
+/*para que la seccion se va correctamente*/
 .info-txt {
     width: 50%;
+    text-align: center;
+    padding: 0 20px;
 }
-
-/*tamaño y color de la palabra información*/
+/*tamaño y color de la palabra nosotros*/
 .info-txt h2 {
-    font-size: 75px;
-    color: #ffffff;
+    font-size: 50px;
+    color: #352f2f;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 25px;
 }
-
-/*color y tamaño del párrafo*/
+/*color y tamaño del parrafo*/ 
 .info-txt p {
     font-size: 18px;
-    color: #050a36;
+    color: #2e2929;
     margin-bottom: 50px;
 }
 
-/*color y tamaño del círculo que rodea al botón "MAS INFORMACION*/
-.btn-2 {
-    display: inline-block;
-    padding: 15px 35px;
-    background-color: #2b2b2b;
-    color: #ffffff;
-    font-weight: 800;
-    text-transform: uppercase;
-    border-radius: 50px;
+
+/*-------------------- Reservas ------------------------------*/
+
+.title-form {
+    margin-top: 80px; 
 }
 
-/*color del círculo cuando se posiciona el cursor*/
-.btn-2:hover {
-    background-color: #8f7e7e;
+.container-form {
+    text-align: center; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color:#2e2929;
+}   
+
+.products-form{
+    background-color:#c3c6e8 ;
+    padding: 20px;
+    text-align: center;
 }
 
-/*sección de horario, color tamaño posición etc*/
-.horario {
-    padding: 100px 0px;
-    background-color: #2b2626;
-}
-
-/*sección de horario*/
-.horario-info h2 {
-    font-size: 75px;
-    color: #FFFFFF;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-
-/*separa los textos*/
-.horario-txt {
+.etiq-camp {
     display: flex;
-    justify-content: space-between;
-}
-
-.txt {
-    color: #FFFFFF;
-}
-
-.txt h4 {
-    font-size: 18px;
-    color: #a7a7a7;
-    margin-bottom: 30px;
-}
-
-.txt h5 {
-    font-size: 18px;
-    color:#0c3483;
-    margin-bottom: 30px;
+    flex-direction: column; 
     align-items: center;
+    margin-bottom: 10px; 
+    text-align: left;
 }
-
-.txt p {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 15px;
+  
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 30%; 
+    padding: 10px; 
+    margin: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
+  
+.radio,
+.checkbox {
+    margin-right: 50px;
+}
+  
+/*--------------------Footer/Contacto -----------------------------*/
 
-/*sección de los links.. ubicación y separación */
-.footer {
-    padding: 100px 0px;
+/* color tamaño posicion etc*/
+.footer-container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #0c3483;
+    color: #fff;
 }
 
-.links h4 {
-    color: #FFFFFF;
-    text-transform: uppercase;
-    margin-bottom: 25px;
+.logo-footer {
+    width: 20%;
+    margin-right: 20px;
 }
 
-/*sección de los enlaces*/
-.links ul li a {
-    color: #FFFFFF;
-    font-size: 16px;
-    margin-bottom: 5px;
-    display: inline-block;
+.logo-footer img {
+    width: 180px; 
 }
 
-/*sección del responsive*/
+.location, .contact-info, .horario-de-atencion {
+    flex: 1; 
+    text-align: center; 
+    padding: 10px; 
+    border-right: 1px solid #fff; 
+}
+
+.contact-info .icon-footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 0; 
+    font-size: 20px;
+}
+
+.location, .contact-info {
+    padding-bottom: 20px; 
+}
+
+
+/*--------------------- sección del responsive --------------------*/
+
 @media(max-width: 991px) {
     .menu {
         padding: 20px;

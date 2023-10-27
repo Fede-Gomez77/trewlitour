@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- "es" indica que el contenido de la página está en español -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas | Trewlitour</title>
+    <!--Favicon: ícono a la izquierda del nombre de la página en el navegador-->
+    <link rel="shortcut icon" href="imagenes\favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+    <body>
+        <header>
+            <!--acá comienza el menú de la página-->
+            <nav class="navbar">
+                <div>
+                    <a href="index.html">
+                        <img class="logo-2" src="imagenes/logoprima.png" alt="">
+                    </a><!--Acá la idea es hacer clic sobre el ícono de la empresa y que retorne al inicio de la página(RCZ))-->
+                </div>
+                <!-- alt= "Se agrega una descripción de la imagen, para el caso que no sea pueda mostrar, o para personas con capacidades diferentes" -->
+
+            <!--<input type="checkbox" id="menu" />-->
+            <!--Esto lo comenté porque no sé que es ni que hace ya que le falta el cierre(RCZ)-->
+            <!--<label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="">
+            </label>--><!--Esto también lo comenté para ver a que pertenecía y no noté ningún cambio(RCZ)-->
+                <!--Román, esto era el menú desplegable, que no recuerdo si funcionaba, para que se hagan las tres rayitas, cuando se achica la pantalla, o abrimos la pág en el cel o tablet-->
+                <div class="menu">
+                    <a href="index.html" class="home-link">Inicio</a>
+                    <a href="index.html#servicios">Servicios</a>
+                    <a href="reservas.html" target="_blank">Reservas</a>
+                    <a href="index.html#empresa">Empresa</a>
+                    <a href="index.html#contacto">Contacto</a>
+                </div>
+                <div class="iconos-redes"><!--Cada ícono redirige en una nueva pestaña a la página correspondiente-->
+                    <div class="social">
+                        <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/542235469303" target="blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+            <main class="container-form">
+                <div class="products-form">
+                    <div class="title-form">
+                        <h1>Reservas</h1>
+                    </div>   
+                    <div class="etiq-camp">
+                        <label for="name">Nombre: </label> <input type="text" name="firstname" placeholder="Ingrese su nombre"><br><br>
+                        <label for="lastname">Apellido: </label> <input type="text" name="lastname" placeholder="Ingrese su apellido"><br><br>
+                        <label for="email">Email: </label> <input type="email" name="email" placeholder="Ingrese su email"><br><br>
+                        <label for="address">Dirección: </label> <input type="text" name="address" placeholder="Ingrese su dirección"><br><br>
+                        <label for="city">Ciudad: </label> <input type="text" name="city" placeholder="Ingrese su ciudad"><br><br>
+                        <label for="zipcode">Código postal: </label> <input type="text" name="zipcode" placeholder="Ingrese su código postal"><br><br>
+                        <label for="BirthDate">Fecha de nacimiento (dd/mm/yyyy): </label> <input type="text" name="BirthDate"><br><br> 
+                        <div class="title-form">
+                            <h1>Tipo de contacto</h1>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="gender" value="hombre">Empresa
+                            <input type="radio" name="gender" value="mujer">Particular
+                            <input type="radio" name="gender" value="otro">Otro
+                            </p>
+                        </div>  
+                        <div class="title-form">
+                            <h1>Motivo de contacto</h1>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="motivo" value="traslados-a-aeropuertos">Traslados a aeropuertos
+                            <input type="checkbox" name="motivo" value="alquiler-de-vehículo">Alquiler de vehículo con chófer
+                            <input type="checkbox" name="motivo" value="turismo">Turismo
+                            <input type="checkbox" name="motivo" value="logística">Logística en Eventos
+                            <input type="checkbox" name="motivo" value="traslado-de-personal">Traslado de personal
+                            <input type="checkbox" name="motivo" value="otro">Otro
+                            </p>
+                        </div>
+                        <div class="title-form">
+                            <h1>Dejanos tu mensaje</h1>
+                        </div> 
+                            <textarea name="message" id="message"rows="20">Escriba aquí</textarea><br>
+                        <input class="btn-1" type="submit" value="Enviar">
+                    </div>
+                </div>    
+            </main>
+            <!--acá comienza una nueva sección de footer/contacto-->
+    <footer class="footer-container" id="contacto">
+        <div class="logo-footer">
+            <a href="index.html">
+                <img src="imagenes/logoprima2.png" alt="">
+            </a>
+        </div>
+        <div class="location">
+            <h3>Ubicación</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Av. Bartolomé Mitre 6678, Wilde, Buenos Aires, Argentina</p>
+            <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7800.808729382105!2d-58.3176132976756!3d-34.70931498886773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a332701f8318f7%3A0xdceba27733c76aad!2sAv.%20Bartolom%C3%A9%20Mitre%206678%2C%20B1875ABJ%20Wilde%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697747639187!5m2!1ses-419!2sar"
+            width="300" height="80" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-info">
+            <h3>Contacto</h3>
+                <p class="icon-footer">
+                    <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/542235469303" target="blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </p>
+                <p><i class="fa-solid fa-phone"></i> 115496246</p>
+                <p><i class="fa-solid fa-phone"></i> 116219661</p>
+        </div>
+        <div class="horario-de-atencion">
+            <h3>Horario de atención</h3>
+            <p><i class="fa-solid fa-clock"></i> Lunes a Viernes: 9:00hs - 18:00hs</p>
+            <p><i class="fa-solid fa-clock"></i> Sábados: 9:00hs - 13:00hs</p>
+        </div>
+    </footer>
+    </body>
+</html>
