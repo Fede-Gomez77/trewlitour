@@ -382,10 +382,21 @@ textarea {
     margin-right: 50px;
 }
   /*------------------Galeria-----------------------*/
+ 
+  .galeria-container{
+    background-color:#c3c6e8 ;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
   .galeria-slider {
     display: flex;
-    width: 500px;
-    height: 300px;
+    width: 800px;
+    height: 500px;
+    margin-top: 20px;
+    
   }
 
   .galeria-slider img {
@@ -397,7 +408,7 @@ textarea {
   }
 
   .galeria-slider img:hover {
-    width: 500px;
+    width: 650px;
     opacity: 1;
     filter: brightness(130%);
   }
