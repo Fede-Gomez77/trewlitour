@@ -9,169 +9,172 @@
     <!--Favicon: ícono a la izquierda del nombre de la página en el navegador-->
     <link rel="shortcut icon" href="imagenes\favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-                    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="estilo.css">
 </head>
 
-    <body>
-        <header>
-            <!--acá comienza el menú de la página-->
-            <nav class="navbar">
-                <div>
-                    <a href="index.html">
-                        <img class="logo-2" src="imagenes/logoprima.png" alt="">
-                    </a><!--Acá la idea es hacer clic sobre el ícono de la empresa y que retorne al inicio de la página(RCZ))-->
-                </div>
-                <!-- alt= "Se agrega una descripción de la imagen, para el caso que no sea pueda mostrar, o para personas con capacidades diferentes" -->
+<body>
+    <header>
+        <!--acá comienza el menú de la página-->
+        <nav class="navbar">
+            <div>
+                <a href="index.html">
+                    <img class="logo-2" src="imagenes/logoprima.png" alt="">
+                </a><!--Acá la idea es hacer clic sobre el ícono de la empresa y que retorne al inicio de la página(RCZ))-->
+            </div>
+            <!-- alt= "Se agrega una descripción de la imagen, para el caso que no sea pueda mostrar, o para personas con capacidades diferentes" -->
 
             <!--<input type="checkbox" id="menu" />-->
             <!--Esto lo comenté porque no sé que es ni que hace ya que le falta el cierre(RCZ)-->
             <!--<label for="menu">
                 <img src="imagenes/menu.png" class="menu-icono" alt="">
             </label>--><!--Esto también lo comenté para ver a que pertenecía y no noté ningún cambio(RCZ)-->
-                <!--Román, esto era el menú desplegable, que no recuerdo si funcionaba, para que se hagan las tres rayitas, cuando se achica la pantalla, o abrimos la pág en el cel o tablet-->
-                <div class="menu">
-                    <a href="index.html" class="home-link">Inicio</a>
-                    <a href="index.html#servicios">Servicios</a>
-                    <a href="reservas.html" target="_blank">Reservas</a>
-                    <a href="index.html#empresa">Empresa</a>
-                    <a href="index.html#contacto">Contacto</a>
+            <!--Román, esto era el menú desplegable, que no recuerdo si funcionaba, para que se hagan las tres rayitas, cuando se achica la pantalla, o abrimos la pág en el cel o tablet-->
+            <div class="menu">
+                <a href="index.html" class="home-link">Inicio</a>
+                <a href="index.html#servicios">Servicios</a>
+                <a href="reservas.html" target="_blank">Reservas</a>
+                <a href="index.html#empresa">Empresa</a>
+                <a href="index.html#contacto">Contacto</a>
+            </div>
+            <div class="iconos-redes"><!--Cada ícono redirige en una nueva pestaña a la página correspondiente-->
+                <div class="social">
+                    <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/542235469303" target="blank"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
-                <div class="iconos-redes"><!--Cada ícono redirige en una nueva pestaña a la página correspondiente-->
-                    <div class="social">
-                        <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://wa.me/542235469303" target="blank"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-                </div>
-            </nav>
-            <!--acá comienza el slider de la página de inicio-->
-            <div class="menu container">
-                <div class="header-content container">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="slider">
-                                    <div class="slider-txt">
-                                        <h1>OMNIBUS</h1>
-                                        <P>
-                                            Nuestro Omnibus ofrece un interior espacioso que permite a los pasajeros
-                                            moverse cómodamente, sus asientos están diseñados para brindar comodidad durante
-                                            trayectos largos y cuentan con sistemas de entretenimiento a bordo que incluyen
-                                            pantallas de video y sistemas de audio para mantener a los pasajeros
-                                            entretenidos durante el viaje.
-                                        </P>
-                                        <div class="botones">
-                                            <a href="galeria.html" class="btn-1">Galeria</a>
-                                        </div>
-                                    </div>
-                                    <div class="slider-img">
-                                        <img src="imagenes/omnibusfondo.jpg" alt="">
+            </div>
+        </nav>
+        <!--acá comienza el slider de la página de inicio-->
+        <div class="menu container">
+            <div class="header-content container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider">
+                                <div class="slider-txt">
+                                    <h1>OMNIBUS</h1>
+                                    <P>
+                                        Nuestro Omnibus ofrece un interior espacioso que permite a los pasajeros
+                                        moverse cómodamente, sus asientos están diseñados para brindar comfort durante
+                                        trayectos largos, cuentan con sistemas de entretenimiento a bordo que incluyen
+                                        pantallas de video y sistemas de audio para mantener a los pasajeros disfruten
+                                        de un viaje más ameno. 
+                                    </P>
+                                    <div class="botones">
+                                        <a href="galeria.html" class="btn-1">Galeria</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="slider">
-                                    <div class="slider-txt">
-                                        <h1>MINIBUS</h1>
-                                        <P>
-                                            Nuestro Minibus IVECO puede trasladar hasta 24 pasajeros y esta diseñado  incluso para 
-                                            personas con movilidad reducida,  cuenta con asientos muy comodos y soporte lumbar para 
-                                            mejorar la experiencia de los pasajeros.
-                                        </P>
-                                        <div class="botones">
-                                            <a href="galeria.html" class="btn-1">Galeria</a>
-                                        </div>
-                                    </div>
-                                    <div class="slider-img">
-                                        <img src="imagenes/minibusfonfo.webp" alt="">
-                                    </div>
+                                <div class="slider-img">
+                                    <img src="imagenes/omnibusfondo.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="slider">
-                                    <div class="slider-txt">
-                                        <h1>COMBI</h1>
-                                        <P>
-                                            Nuestra Mercede-Benz Sprinter cuenta con un espacio interior amplio ya que puede llevar 
-                                            hasta 20 pasajeros y debido a su tamaño y capacidad es ideal para el traslado de 
-                                            personas en trayectos de corta a media distancia.
-                                        <div class="botones">
-                                            <a href="galeria.html" class="btn-1">Galeria</a>
-                                        </div>
-                                    </div>
-                                    <div class="slider-img">
-                                        <img src="imagenes/combifondo.webp" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <!--botones para redirigir-->
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide">
+                            <div class="slider">
+                                <div class="slider-txt">
+                                    <h1>MINIBUS</h1>
+                                    <P>
+                                        Nuestro Minibus IVECO puede trasladar hasta 24 pasajeros y está diseñado incluso
+                                        para
+                                        personas con movilidad reducida, cuenta con asientos muy cómodos y soporte
+                                        lumbar para
+                                        mejorar la experiencia de los pasajeros.
+                                    </P>
+                                    <div class="botones">
+                                        <a href="galeria.html" class="btn-1">Galeria</a>
+                                    </div>
+                                </div>
+                                <div class="slider-img">
+                                    <img src="imagenes/minibusfonfo.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider">
+                                <div class="slider-txt">
+                                    <h1>COMBI</h1>
+                                    <P>
+                                        Nuestra Mercedes-Benz Sprinter cuenta con un espacio interior amplio ya que
+                                        puede llevar
+                                        hasta 20 pasajeros. Debido a su tamaño y capacidad, es ideal para el traslado de
+                                        personas en trayectos de corta a media distancia.
+                                    <div class="botones">
+                                        <a href="galeria.html" class="btn-1">Galeria</a>
+                                    </div>
+                                </div>
+                                <div class="slider-img">
+                                    <img src="imagenes/combifondo.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--botones para redirigir-->
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+    </header>
+    <!--acá comienza la sección de servicios-->
+    <main class="products" id="servicios">
+        <div class="tabs-container">
+            <section class="tab1">
+                <h1 class="section-title">Servicios Trewlitour</h1>
+            </section>
+            <div class="service-container">
+                <div class="service-card">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h4>Traslados a aeropuertos</h4>
+                    <div class="service-description">
+                        <p>Traslado de pasajeros desde/hacia el hotel, domicilio particular,
+                            aeropuerto o terminal de ómnibus con el fin de proseguir su viaje.</p>
                     </div>
                 </div>
-        </header>
-        <!--acá comienza la sección de servicios-->
-        <main class="products" id="servicios">
-            <div class="tabs-container">
-                <section class="tab1">
-                    <h1 class="section-title">Servicios Trewlitour</h1>
-                </section>
-                <div class="service-container">
-                    <div class="service-card">
-                        <i class="fa-solid fa-plane-departure"></i>
-                        <h4>Traslados a aeropuertos</h4>
-                        <div class="service-description">
-                            <p>Traslado de pasajeros desde/hacia el hotel, domicilio particular,
-                                aeropuerto o terminal de ómnibus con el fin de proseguir su viaje.</p>
-                        </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-bus-simple"></i>
+                    <h4>Alquiler de vehículo con chófer</h4>
+                    <div class="service-description">
+                        <p>Usted podrá contratar según su necesidad un vehículo a su entera
+                            disposición. Dichos servicios se realizan por un mínimo de 3 horas
+                            consecutivas con un límite de kilometraje libre.</p>
                     </div>
-                    <div class="service-card">
-                        <i class="fa-solid fa-bus-simple"></i>
-                        <h4>Alquiler de vehículo con chófer</h4>
-                        <div class="service-description">
-                            <p>Usted podrá contratar según su necesidad un vehículo a su entera
-                                disposición. Dichos servicios se realizan por un mínimo de 3 horas
-                                consecutivas con un límite de kilometraje libre.</p>
-                        </div>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-city"></i>
+                    <h4>Turismo</h4>
+                    <div class="service-description">
+                        <p>Eventos, excursiones, paseos o vacaciones, ofreciéndole el confort de
+                            nuestras modernas unidades de traslado, experiencia, honestidad y
+                            cordialidad.</p>
                     </div>
-                    <div class="service-card">
-                        <i class="fa-solid fa-city"></i>
-                        <h4>Turismo</h4>
-                        <div class="service-description">
-                            <p>Eventos, excursiones, paseos o vacaciones, ofreciéndole el confort de
-                                nuestras modernas unidades de traslado, experiencia, honestidad y
-                                cordialidad.</p>
-                        </div>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-icons"></i>
+                    <h4>Logística en Eventos</h4>
+                    <div class="service-description">
+                        <p>Para brindar a sus invitados la comodidad y seguridad de no tener que
+                            conducir antes y después del evento, le ofrecemos nuestra experiencia
+                            en logística de transporte de personas para eventos sociales o
+                            corporativos.</p>
                     </div>
-                    <div class="service-card">
-                        <i class="fa-solid fa-icons"></i>
-                        <h4>Logística en Eventos</h4>
-                        <div class="service-description">
-                            <p>Para brindar a sus invitados la comodidad y seguridad de no tener que
-                                conducir antes y después del evento, le ofrecemos nuestra experiencia
-                                en logística de transporte de personas para eventos sociales o
-                                corporativos.</p>
-                        </div>
-                    </div>
-                    <div class="service-card">
-                        <i class="fa-solid fa-users"></i>
-                        <h4>Traslado de personal</h4>
-                        <div class="service-description">
-                            <!-- Completo descripción de traslado de personal -->
-                            <p>Confíe en nuestro servicio de traslado de sus empleados, optimizando la jornada laboral.
-                                Brindamos comodidad, puntualidad y seguridad.</p>
-                        </div>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-users"></i>
+                    <h4>Traslado de personal</h4>
+                    <div class="service-description">
+                        <!-- Completo descripción de traslado de personal -->
+                        <p>Confíe en nuestro servicio de traslado de sus empleados, optimizando la jornada laboral.
+                            Brindamos comodidad, puntualidad y seguridad.</p>
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <!--Acá empieza la sección de información de la empresa-->
+    <!--Acá empieza la sección de información de la empresa-->
     <section class="info" id="empresa">
         <div class="info-img">
             <img src="imagenes/flota1.jpg" alt="">
@@ -201,20 +204,20 @@
             <h3>Ubicación</h3>
             <p><i class="fa-solid fa-location-dot"></i> Av. Bartolomé Mitre 6678, Wilde, Buenos Aires, Argentina</p>
             <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7800.808729382105!2d-58.3176132976756!3d-34.70931498886773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a332701f8318f7%3A0xdceba27733c76aad!2sAv.%20Bartolom%C3%A9%20Mitre%206678%2C%20B1875ABJ%20Wilde%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697747639187!5m2!1ses-419!2sar"
-            width="300" height="80" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7800.808729382105!2d-58.3176132976756!3d-34.70931498886773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a332701f8318f7%3A0xdceba27733c76aad!2sAv.%20Bartolom%C3%A9%20Mitre%206678%2C%20B1875ABJ%20Wilde%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697747639187!5m2!1ses-419!2sar"
+                width="300" height="80" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="contact-info">
             <h3>Contacto</h3>
-                <p class="icon-footer">
-                    <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://wa.me/542235469303" target="blank"><i class="fa-brands fa-whatsapp"></i></a>
-                </p>
-                <p><i class="fa-solid fa-phone"></i> 115496246</p>
-                <p><i class="fa-solid fa-phone"></i> 116219661</p>
+            <p class="icon-footer">
+                <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/542235469303" target="blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 115496246</p>
+            <p><i class="fa-solid fa-phone"></i> 116219661</p>
         </div>
         <div class="horario-de-atencion">
             <h3>Horario de atención</h3>
