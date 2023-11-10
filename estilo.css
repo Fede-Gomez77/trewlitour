@@ -29,11 +29,12 @@ body {
     background-color: #0c3483; 
     position: fixed; 
     width: 100%; 
+    height: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px; 
-    height: 60px; 
+    height: 110px; 
     z-index: 9999;
 }
 
@@ -46,7 +47,7 @@ body {
 
 /* Ajusta el margen derecho del logo para separarlo del borde izquierdo */
 .navbar .logo-2 {
-    width: 100px; 
+    width: 200px; 
     height: auto;
     cursor: pointer; 
     margin-right: 20px; 
@@ -195,7 +196,7 @@ body {
     margin-top: 50px;
 }
 
-/*forma y color del circulo que rodea al boton de galeria*/
+/*forma y color del círculo que rodea al botón de galeria*/
 .btn-1 {
     display: inline-block;
     padding: 15px 35px;
@@ -209,13 +210,13 @@ body {
     transition: transform 0.3s;
 }
 
-/*color del circulo al posicinar el cursor*/
+/*color del círculo al posicionar el cursor*/
 .btn-1:hover {
     background-color: #0c3483;
     color:#ebe3e3;
     transform: scale(1.05);
 }
-/*tamaño y posicion de las imagenes del slider*/
+/*tamaño y posición de las imágenes del slider*/
 .slider-img {
     width: 50%;
 }
@@ -227,18 +228,18 @@ body {
 
 /*------------------------------------------------*/
 
-/*tamaño del icono del inicio cuando se encuentra responsive*/
+/*tamaño del ícono del inicio cuando se encuentra responsive*/
 .menu-icono {
     width: 25px;
 }
-/*el icono se esconde cuando esta en modo escritorio*/
+/*el ícono se esconde cuando esta en modo escritorio*/
 .menu label {
     cursor: pointer;
     display: none;
 }
 /*-----------------------Servicios-----------------------*/
 
-/*color de fondo de la seccion de servicios*/
+/*color de fondo de la sección de servicios*/
 /* Estilo para la sección de servicios */
 .products {
     background-color: #e7e9ff;
@@ -296,7 +297,7 @@ body {
 
 /*--------------------INFORMACION--------------*/
 
-/*seccion de la la ubicacion y tamaños de la informacion*/
+/*sección de la la ubicación y tamaños de la información*/
 
 .info {
     padding: 80px 100px;
@@ -310,7 +311,7 @@ body {
 .info-img {
     width: 100%;
 }
-/*tamaño de la imagen de la informacion*/
+/*tamaño de la imagen de la información*/
 .info-img img {
     width: 100%; 
     max-width: 650px; 
@@ -318,7 +319,7 @@ body {
     border-radius: 40px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
-/*para que la seccion se va correctamente*/
+/*para que la sección se vea correctamente*/
 .info-txt {
     width: 50%;
     text-align: center;
@@ -332,7 +333,7 @@ body {
     text-transform: uppercase;
     margin-bottom: 25px;
 }
-/*color y tamaño del parrafo*/ 
+/*color y tamaño del párrafo*/ 
 .info-txt p {
     font-size: 18px;
     color: #2e2929;
@@ -424,7 +425,7 @@ textarea {
 
 /*--------------------Footer/Contacto -----------------------------*/
 
-/* color tamaño posicion etc*/
+/* color tamaño posición etc*/
 .footer-container {
     display: flex;
     justify-content: space-between;
