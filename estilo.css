@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
 
+@media only screen and (max-width: 600px) {
+    /*estilos para pantallas pequeñas*/
+}
+
+/*estilos para pantallas pequeñas*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /*estilos para pantallas medianas*/
+}
+
+@media only screen and (min-width: 1025px) {
+    /*estilos para pantallas grandes*/
+}
+
+
+
 /* {
     margin: 0;
     padding: 0;
@@ -14,7 +29,7 @@ body {
     padding: 0;
     background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
     font-family: 'Poppins', sans-serif;
-    
+
 }
 
 
@@ -26,47 +41,47 @@ body {
 }
 
 .navbar {
-    background-color: #0c3483; 
-    position: fixed; 
-    width: 100%; 
+    background-color: #0c3483;
+    position: fixed;
+    width: 100%;
     height: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; 
-    height: 110px; 
+    padding: 0 20px;
+    height: 110px;
     z-index: 9999;
 }
 
 .navbar a {
-    color: white; 
-    text-decoration: none; 
-    margin: 0 20px; 
-    font-weight: bold; 
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
 }
 
 /* Ajusta el margen derecho del logo para separarlo del borde izquierdo */
 .navbar .logo-2 {
-    width: 200px; 
+    width: 200px;
     height: auto;
-    cursor: pointer; 
-    margin-right: 20px; 
+    cursor: pointer;
+    margin-right: 20px;
 }
 
 /* Ajusta el margen izquierdo de .menu para centrar los elementos */
 .navbar .menu {
-    margin-left: auto; 
+    margin-left: auto;
 }
 
 .navbar .iconos-redes {
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: 20px;
 }
 
 .navbar .iconos-redes a {
     color: white;
     text-decoration: none;
-    margin-left: 0; 
+    margin-left: 0;
     font-size: 20px;
 }
 
@@ -77,6 +92,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 /*tamaño de las flechas*/
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -87,11 +103,13 @@ body {
 .swiper-button-next:hover::after {
     font-size: 50px;
 }
+
 /*color de las flechas*/
 .swiper-button-next,
 .swiper-button-prev {
     color: #0c3483;
 }
+
 /*color de los puntitos del slider*/
 .swiper-pagination-bullet {
     background-color: #0c3483;
@@ -107,6 +125,7 @@ body {
     margin-top: 200px;
     padding-bottom: 50px;
 }
+
 /*alineacion de texto del slider*/
 .slider {
     display: flex;
@@ -117,6 +136,7 @@ body {
     margin-left: 85px;
     width: 50%;
 }
+
 /*color y tamaño del texto del slider*/
 .slider-txt h1 {
     font-size: 70px;
@@ -151,8 +171,9 @@ body {
 /*color del circulo al posicinar el cursor*/
 .btn-1:hover {
     background-color: #0c3483;
-    color:#ebe3e3
+    color: #ebe3e3
 }
+
 /*tamaño y posicion de las imagenes del slider*/
 .slider-img {
     width: 50%;
@@ -168,6 +189,7 @@ body {
     margin-top: 100px;
     padding-bottom: 50px;
 }
+
 /*alineacion de texto del slider*/
 .slider {
     display: flex;
@@ -178,6 +200,7 @@ body {
     margin-left: 85px;
     width: 50%;
 }
+
 /*color y tamaño del texto del slider*/
 .slider-txt h1 {
     font-size: 70px;
@@ -213,9 +236,10 @@ body {
 /*color del círculo al posicionar el cursor*/
 .btn-1:hover {
     background-color: #0c3483;
-    color:#ebe3e3;
+    color: #ebe3e3;
     transform: scale(1.05);
 }
+
 /*tamaño y posición de las imágenes del slider*/
 .slider-img {
     width: 50%;
@@ -232,11 +256,13 @@ body {
 .menu-icono {
     width: 25px;
 }
+
 /*el ícono se esconde cuando esta en modo escritorio*/
 .menu label {
     cursor: pointer;
     display: none;
 }
+
 /*-----------------------Servicios-----------------------*/
 
 /*color de fondo de la sección de servicios*/
@@ -250,32 +276,37 @@ body {
 /* Contenedor de las tarjetas */
 .service-container {
     display: flex;
-    justify-content: center; /* Centra las tarjetas horizontalmente */
-    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center;
+    /* Centra las tarjetas horizontalmente */
+    gap: 20px;
+    /* Espacio entre las tarjetas */
     margin-bottom: 100px;
 }
 
 /* Estilo base para las tarjetas */
 .service-card {
-    flex: 0 1 calc(20% - 20px); /* Ajusta el ancho de cada tarjeta según el espacio disponible */
-    background-color: #fff; /* Color de fondo de las tarjetas */
+    flex: 0 1 calc(20% - 20px);
+    /* Ajusta el ancho de cada tarjeta según el espacio disponible */
+    background-color: #fff;
+    /* Color de fondo de las tarjetas */
     padding: 20px;
-    border-radius: 10px; 
-    border: 2px solid #1551c7; 
+    border-radius: 10px;
+    border: 2px solid #1551c7;
     text-align: center;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
     max-width: calc(20% - 20px);
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
 }
 
 /* Cambia el tamaño de las tarjetas en hover */
 .service-card:hover {
     transform: scale(1.05);
 }
+
 /* Estilos para la imagen en las tarjetas */
 .service-card i {
-    font-size: 26px; 
-    color: #007bff; 
+    font-size: 26px;
+    color: #007bff;
 }
 
 /* Estilos para el título y descripción en las tarjetas */
@@ -288,7 +319,7 @@ body {
     font-size: 14px;
 }
 
-.section-title{
+.section-title {
     font-size: 50px;
     color: #352f2f;
 }
@@ -304,27 +335,30 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #c3c6e8 ;
-    
+    background-color: #c3c6e8;
+
 }
 
 .info-img {
     width: 100%;
 }
+
 /*tamaño de la imagen de la información*/
 .info-img img {
-    width: 100%; 
-    max-width: 650px; 
-    height: auto; 
+    width: 100%;
+    max-width: 650px;
+    height: auto;
     border-radius: 40px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
 }
+
 /*para que la sección se vea correctamente*/
 .info-txt {
     width: 50%;
     text-align: center;
     padding: 0 20px;
 }
+
 /*tamaño y color de la palabra nosotros*/
 .info-txt h2 {
     font-size: 50px;
@@ -333,7 +367,8 @@ body {
     text-transform: uppercase;
     margin-bottom: 25px;
 }
-/*color y tamaño del párrafo*/ 
+
+/*color y tamaño del párrafo*/
 .info-txt p {
     font-size: 18px;
     color: #2e2929;
@@ -344,46 +379,47 @@ body {
 /*-------------------- Reservas ------------------------------*/
 
 .title-form {
-    margin-top: 80px; 
+    margin-top: 80px;
 }
 
 .container-form {
-    text-align: center; 
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
-    color:#2e2929;
-}   
+    color: #2e2929;
+}
 
-.products-form{
-    background-color:#c3c6e8 ;
+.products-form {
+    background-color: #c3c6e8;
     padding: 20px;
     text-align: center;
 }
 
 .etiq-camp {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     text-align: left;
 }
-  
+
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 30%; 
-    padding: 10px; 
-    margin: 5px; 
+    width: 30%;
+    padding: 10px;
+    margin: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-  
+
 .radio,
 .checkbox {
     margin-right: 50px;
 }
-  /*------------------Galeria-----------------------*/
-  /* Establecer estilos para el cuerpo de la página y el contenedor */
+
+/*------------------Galeria-----------------------*/
+/* Establecer estilos para el cuerpo de la página y el contenedor */
 /*body, html {
     margin: 0;
     padding: 0;
@@ -392,19 +428,22 @@ textarea {
 }*/
 
 /* Establecer estilos para el slider de la galería */
-.galeria-container{
-    background-color:#c3c6e8 ;
-    padding: 100px; 
+.galeria-container {
+    background-color: #c3c6e8;
+    padding: 100px;
     align-items: center;
     justify-content: center;
-  }
+}
 
 .galeria-slider {
     display: flex;
-    width: 900px; /* 100% del ancho de la pantalla */
-    
-    height: 600px; /* Establece la altura deseada */
-    margin: 0 auto; /* Centra el slider horizontalmente */
+    width: 900px;
+    /* 100% del ancho de la pantalla */
+
+    height: 600px;
+    /* Establece la altura deseada */
+    margin: 0 auto;
+    /* Centra el slider horizontalmente */
 }
 
 /* Establecer estilos para las imágenes en el slider */
@@ -418,7 +457,8 @@ textarea {
 
 /* Establecer estilos al pasar el mouse sobre las imágenes */
 .galeria-slider img:hover {
-    width: 100%; /* 100% del ancho del contenedor padre (.galeria-slider) */
+    width: 100%;
+    /* 100% del ancho del contenedor padre (.galeria-slider) */
     opacity: 1;
     filter: brightness(130%);
 }
@@ -441,25 +481,28 @@ textarea {
 }
 
 .logo-footer img {
-    width: 180px; 
+    width: 180px;
 }
 
-.location, .contact-info, .horario-de-atencion {
-    flex: 1; 
-    text-align: center; 
-    padding: 10px; 
-    border-right: 1px solid #fff; 
+.location,
+.contact-info,
+.horario-de-atencion {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid #fff;
 }
 
 .contact-info .icon-footer a {
     color: white;
     text-decoration: none;
-    margin-left: 0; 
+    margin-left: 0;
     font-size: 20px;
 }
 
-.location, .contact-info {
-    padding-bottom: 20px; 
+.location,
+.contact-info {
+    padding-bottom: 20px;
 }
 
 
