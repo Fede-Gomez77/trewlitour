@@ -53,53 +53,51 @@
             <div class="title-form">
                 <h1>Reservas</h1>
             </div>
-            <div class="etiq-camp">
-                <label for="name">Nombre: </label> <input type="text" id="firstname" name="firstname"
-                    placeholder="Ingrese su nombre"><br><br>
-                <label for="lastname">Apellido: </label> <input type="text" id="lastname" name="lastname"
-                    placeholder="Ingrese su apellido"><br><br>
-                <label for="email">Email: </label> <input type="email" id="email" name="email"
-                    placeholder="Ingrese su email"><br><br>
-                <label for="address">Dirección: </label> <input type="text" id="address" name="address"
-                    placeholder="Ingrese su dirección"><br><br>
-                <label for="city">Ciudad: </label> <input type="text" id="city" name="city"
-                    placeholder="Ingrese su ciudad"><br><br>
-                <label for="zipcode">Código postal: </label> <input type="text" id="zipcode" name="zipcode"
-                    placeholder="Ingrese su código postal"><br><br>
-                <label for="phone">Teléfono: </label> <input type="text" id="phone" name="phone"
-                    placeholder="Ingrese su teléfono"><br><br>
-                <div class="title-form">
-                    <h1>Tipo de contacto</h1>
+            <form id="reservationForm"> <!--agregué la etiqueta form para poder validar el formulario-->
+                <div class="etiq-camp">
+                    <label for="firstname">Nombre: </label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Ingrese su nombre"><br><br>
+                    <label for="lastname">Apellido: </label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Ingrese su apellido"><br><br>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su email"><br><br>
+                    <label for="address">Dirección: </label>
+                    <input type="text" id="address" name="address" placeholder="Ingrese su dirección"><br><br>
+                    <label for="city">Ciudad: </label>
+                    <input type="text" id="city" name="city" placeholder="Ingrese su ciudad"><br><br>
+                    <label for="zipcode">Código postal: </label>
+                    <input type="text" id="zipcode" name="zipcode" placeholder="Ingrese su código postal"><br><br>
+                    <label for="phone">Teléfono: </label>
+                    <input type="text" id="phone" name="phone" placeholder="Ingrese su teléfono"><br><br>
+                    <div class="title-form">
+                        <h1>Tipo de contacto</h1>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="empresa" name="empresa" value="hombre">Empresa
+                        <input type="radio" id="particular" name="particular" value="mujer">Particular
+                        <input type="radio" id="otro" name="otro" value="otro">Otro
+                    </div>
+                    <div class="title-form">
+                        <h1>Motivo de contacto</h1>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="motivo" value="traslados-a-aeropuertos">Traslados a aeropuertos
+                        <input type="checkbox" name="motivo" value="alquiler-de-vehículo">Alquiler de vehículo con chófer
+                        <input type="checkbox" name="motivo" value="turismo">Turismo
+                        <input type="checkbox" name="motivo" value="logística">Logística en Eventos
+                        <input type="checkbox" name="motivo" value="traslado-de-personal">Traslado de personal
+                        <input type="checkbox" name="motivo" value="otro">Otro
+                    </div>
+                    <div class="title-form">
+                        <h1>Dejanos tu mensaje</h1>
+                    </div>
+                    <textarea name="message" id="message" rows="20">Escriba aquí</textarea><br>
+                    <input class="btn-1" type="submit" value="Enviar" onclick="validarFormulario()">
                 </div>
-                <div class="radio">
-                    <input type="radio" id="empresa" name="gender" value="hombre">Empresa
-                    <input type="radio" id="particular" name="gender" value="mujer">Particular
-                    <input type="radio" id="otro" name="gender" value="otro">Otro
-
-                </div>
-                <div class="title-form">
-                    <h1>Motivo de contacto</h1>
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="motivo" value="traslados-a-aeropuertos">Traslados a aeropuertos
-                    <input type="checkbox" name="motivo" value="alquiler-de-vehículo">Alquiler de vehículo con chófer
-                    <input type="checkbox" name="motivo" value="turismo">Turismo
-                    <input type="checkbox" name="motivo" value="logística">Logística en Eventos
-                    <input type="checkbox" name="motivo" value="traslado-de-personal">Traslado de personal
-                    <input type="checkbox" name="motivo" value="otro">Otro
-
-                </div>
-                <div class="title-form">
-                    <h1>Dejanos tu mensaje</h1>
-                </div>
-                <textarea name="message" id="message" rows="20">Escriba aquí</textarea><br>
-                <input class="btn-1" type="submit" value="Enviar">
-            </div>
+            </form>
         </div>
-
-
-
     </main>
+    
     <!--acá comienza una nueva sección de footer/contacto-->
     <footer class="footer-container" id="contacto">
         <div class="logo-footer">
