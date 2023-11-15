@@ -1,27 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
 
-@media only screen and (max-width: 600px) {
-    /*estilos para pantallas pequeñas*/
-}
-
-/*estilos para pantallas pequeñas*/
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /*estilos para pantallas medianas*/
-}
-
-@media only screen and (min-width: 1025px) {
-    /*estilos para pantallas grandes*/
-}
-
-
-
-/* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-}*/
+} */
 
 /*  color de fondo de página y fuente*/
 body {
@@ -126,7 +111,7 @@ body {
     padding-bottom: 50px;
 }
 
-/*alineacion de texto del slider*/
+/*alineación de texto del slider*/
 .slider {
     display: flex;
     align-items: center;
@@ -150,12 +135,12 @@ body {
     color: #2e2929;
 }
 
-/*boton de galeria*/
+/*botón de galeria*/
 .botones {
     margin-top: 50px;
 }
 
-/*forma y color del circulo que rodea al boton de galeria*/
+/*forma y color del círculo que rodea al botón de galeria*/
 .btn-1 {
     display: inline-block;
     padding: 15px 35px;
@@ -168,13 +153,13 @@ body {
     border-radius: 50px;
 }
 
-/*color del circulo al posicinar el cursor*/
+/*color del círculo al posicinar el cursor*/
 .btn-1:hover {
     background-color: #0c3483;
     color: #ebe3e3
 }
 
-/*tamaño y posicion de las imagenes del slider*/
+/*tamaño y posición de las imágenes del slider*/
 .slider-img {
     width: 50%;
 }
@@ -190,7 +175,7 @@ body {
     padding-bottom: 50px;
 }
 
-/*alineacion de texto del slider*/
+/*alineación de texto del slider*/
 .slider {
     display: flex;
     align-items: center;
@@ -328,7 +313,7 @@ body {
 
 /*--------------------INFORMACION--------------*/
 
-/*sección de la la ubicación y tamaños de la información*/
+/*sección de la ubicación y tamaños de la información*/
 
 .info {
     padding: 80px 100px;
@@ -425,7 +410,7 @@ textarea {
     padding: 0;
     overflow: hidden;
     height: 100%;
-}*/
+}
 
 /* Establecer estilos para el slider de la galería */
 .galeria-container {
@@ -680,5 +665,18 @@ textarea {
     /*ubicación de los enlaces*/
     .links h4 {
         margin: 25px 0px 10px 0px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        /*estilos para pantallas pequeñas*/
+    }
+    
+    /*estilos para pantallas pequeñas*/
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        /*estilos para pantallas medianas*/
+    }
+    
+    @media only screen and (min-width: 1025px) {
+        /*estilos para pantallas grandes*/
     }
 }
