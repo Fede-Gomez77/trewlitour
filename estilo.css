@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
 
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-} */
+}
 
 /*  color de fondo de página y fuente*/
 body {
@@ -680,7 +680,7 @@ body, html {
 
     .slider-img,
     .slider-txt {
-        width: 30%;
+        width: 50%;
     }
 
     .slider-txt {
