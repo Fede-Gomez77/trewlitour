@@ -58,12 +58,23 @@ body {
     margin-left: auto;
 }
 
-.navbar .iconos-redes {
+.navbar .iconos-redes{
     margin-left: auto;
     margin-right: 20px;
 }
 
 .navbar .iconos-redes a {
+    color: white;
+    text-decoration: none;
+    margin-left: 0;
+    font-size: 20px;
+}
+
+.navbar .menu-icono{
+    display: none;
+}
+
+.navbar .menu-icono i{
     color: white;
     text-decoration: none;
     margin-left: 0;
@@ -405,10 +416,10 @@ textarea {
 
 /*------------------Galeria-----------------------*/
 /* Establecer estilos para el cuerpo de la página y el contenedor */
-/*body, html {
+body, html {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
     height: 100%;
 }
 
@@ -422,7 +433,7 @@ textarea {
 
 .galeria-slider {
     display: flex;
-    width: 900px;
+    
     /* 100% del ancho de la pantalla */
 
     height: 600px;
@@ -491,192 +502,189 @@ textarea {
 }
 
 
-/*--------------------- sección del responsive --------------------*/
+/*----------------------- RESPONSIVE ---------------------------------*/
 
-@media(max-width: 991px) {
-    .menu {
-        padding: 20px;
-        justify-content: space-between;
+@media screen and (max-width: 768px) {
+
+    /* Responsive de Navbar */
+
+    .navbar {
+        padding: 0 10px; /* Reduce el relleno para conservar espacio */
     }
 
-    .menu-2 {
-        display: none;
-    }
-
-    .logo-1 {
-        width: 600px;
-        align-self: flex-start;
-    }
-
-    .logo-2 {
-        width: 0;
-    }
-
-    .menu label {
-        display: initial;
-    }
-
-    /*color y posición del menú al apretar el ícono*/
-    .menu .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #756767;
-        display: none;
-    }
-
-    /*el menú cubre todo el ancho cuando se le hace clic*/
-    .menu .navbar ul li {
-        width: 100%;
-    }
-
-    /*para que funcione el menú*/
-    #menu:checked~.navbar {
-        display: initial;
+    .navbar a {
+        margin: 0 10px; /* Reduce el margen de los elementos del menú */
     }
 
     .header-content {
-        padding: 30px;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
-    /*sección del slider para acomodar el tamaño cuando está responsive*/
+    /* Responsive de carrusel */
+
     .slider {
         flex-direction: column;
-    }
-
-    .slider-txt {
-        margin-left: 0;
-        width: 100%;
         text-align: center;
-        margin-bottom: 50px;
-    }
-
-    .slider-txt h1 {
-        font-size: 50px;
-    }
-
-    /*tamaño del texto*/
-    .slider-txt p {
-        font-size: 16px;
-    }
-
-    .btn-1 {
-        padding: 10px 25px;
-        font-size: 14px;
     }
 
     .slider-img {
-        width: 100%;
-        text-align: center;
+        width: 50%;
     }
 
-    /*tamaño de las imágenes del slider*/
     .slider-img img {
-        margin-right: 0px;
-        width: 300px;
+        margin-right: 0;
+        width: 100%;
     }
 
-    /*este código hace que los bullets (puntos) no queden muy pegados a la imagen*/
-    .swiper-horizontal>.swiper-pagination-bullets,
-    .swiper-pagination-bullets,
-    .swiper-pagination-pagination-horizontal,
-    .swiper-pagination-custom,
-    .swiper-pagination-fraction {
-        bottom: -7px;
+    .slider-txt {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 60%;
     }
 
-    /*sección de los servicios tamaño etc*/
-    .tabs {
-        padding: 50px 30px;
-    }
+    /*Responsive servicios*/
 
-    .tabs label {
-        width: 33%;
-    }
-
-    /*sección de la información tamaño etc*/
-    .info {
-        padding: 30px;
+    .service-container {
         flex-direction: column;
+        align-items: center; /* Centra las tarjetas verticalmente */
     }
 
+    /* Ajusta el ancho de cada tarjeta al 100% del contenedor */
+    .service-card {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+
+    /*Responsive reservas*/
+
+    .etiq-camp {
+        width: 100%; /* Hace que todos los elementos se extiendan al ancho completo */
+        text-align: center; /* Centra el texto en el contenedor */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%; /* Hace que los campos de entrada y textarea ocupen el ancho completo */
+    }
+
+    .radio,
+    .checkbox {
+        margin-right: 0; /* Elimina el margen derecho para que los elementos estén más juntos */
+    }
+
+    .checkbox {
+        display: flex;
+        flex-direction: column; /* Muestra los checkboxes en columna */
+    }
+
+    /*Responsive Información*/
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-txt,
     .info-img {
         width: 100%;
         text-align: center;
     }
 
-    /*tamaño de la imagen de servicio*/
     .info-img img {
-        width: 400px;
-        height: 200px;
-        margin-bottom: 25px;
-    }
-
-    /*tamaño de título y los textos de servicio*/
-    .info-txt {
         width: 100%;
-        text-align: center;
+        max-width: 100%;
     }
 
-    .info-txt h2 {
-        font-size: 50px;
-    }
+    /*Responsive Galería*/
 
-    .info-txt p {
-        font-size: 16px;
-    }
-
-    .btn-1 {
-        font-size: 16px;
-    }
-
-    /*tamaño de la sección de horario*/
-    .horario {
-        padding: 30px;
-        text-align: center;
-    }
-
-    .horario-info h2 {
-        font-size: 50px;
-        margin-bottom: 15px;
-    }
-
-    .horario-txt {
+    .galeria-slider {
+        padding: 0; /* Elimina el relleno para maximizar el espacio */
         flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
     }
 
-    /*tamaño y ubicación de las redes sociales de los enlaces*/
-    .socials {
-        justify-content: center;
+    .galeria-slider img {
+        width: 60%; /* Ajusta el ancho de las imágenes para pantallas más pequeñas */
+        margin: 5px 0; /* Agrega un margen entre las imágenes */
     }
 
-    .socials img {
-        margin: 8px 0 0 0;
+    /*Responsive footer*/
+
+    .footer-container {
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
     }
 
-    .footer {
-        padding: 30px;
-        flex-direction: column;
-        text-align: center;
+    .logo-footer {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+        margin-bottom: 20px; /* Agrega un margen inferior para separar de los otros elementos */
     }
 
-    /*ubicación de los enlaces*/
-    .links h4 {
-        margin: 25px 0px 10px 0px;
-    }
-
-    @media only screen and (max-width: 600px) {
-        /*estilos para pantallas pequeñas*/
+    .location,
+    .contact-info,
+    .horario-de-atencion {
+        flex: 1 1 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+        border: none; /* Elimina el borde derecho en pantallas más pequeñas */
+        margin-bottom: 20px; /* Agrega un margen inferior para separar de los otros elementos */
     }
     
-    /*estilos para pantallas pequeñas*/
-    @media only screen and (min-width: 601px) and (max-width: 1024px) {
-        /*estilos para pantallas medianas*/
-    }
+}
+
+@media screen and (max-width: 600px) {
     
-    @media only screen and (min-width: 1025px) {
-        /*estilos para pantallas grandes*/
+    /* Responsive de Navbar */
+
+    .navbar {
+        padding: 0 10px;
+        justify-content: center; /* Centra los elementos en el eje horizontal */
+    }
+
+    .navbar .menu a {
+        display: none; /* Oculta los elementos del menú en pantallas más pequeñas */
+    }
+
+    .menu-icon {
+        display: block; /* Muestra el icono de menú en pantallas más pequeñas */
+    }
+
+    .navbar .img {
+        display: block;
+        margin: 0 auto; /* Centra el logo en el eje horizontal */
+        text-align: center; /* Añade este estilo para centrar el texto dentro del contenedor */
+    }
+
+    .navbar .iconos-redes {
+        display: none; /* Puedes ocultar los iconos de redes sociales si lo prefieres */
+    }
+
+    .navbar .menu-icono {
+        display: block;
+        margin-left: auto;
+        margin-right: 10%; /* Ajusta según sea necesario */
+    }
+
+    .navbar .menu-icono i {
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+    }
+
+    /* Responsive de carrusel */
+
+    .slider {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .slider-img,
+    .slider-txt {
+        width: 50%;
+    }
+
+    .slider-txt {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
