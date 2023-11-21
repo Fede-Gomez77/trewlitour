@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
 
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-} */
+}
 
 /*  color de fondo de página y fuente*/
 body {
@@ -261,8 +261,6 @@ body {
 
 /*-----------------------Servicios-----------------------*/
 
-/*color de fondo de la sección de servicios*/
-/* Estilo para la sección de servicios */
 .products {
     background-color: #e7e9ff;
     padding: 20px;
@@ -273,18 +271,14 @@ body {
 .service-container {
     display: flex;
     justify-content: center;
-    /* Centra las tarjetas horizontalmente */
     gap: 20px;
-    /* Espacio entre las tarjetas */
     margin-bottom: 100px;
 }
 
 /* Estilo base para las tarjetas */
 .service-card {
     flex: 0 1 calc(20% - 20px);
-    /* Ajusta el ancho de cada tarjeta según el espacio disponible */
     background-color: #fff;
-    /* Color de fondo de las tarjetas */
     padding: 20px;
     border-radius: 10px;
     border: 2px solid #1551c7;
@@ -320,11 +314,11 @@ body {
     color: #352f2f;
 }
 
-/* Ajusta los estilos según tu diseño y preferencias */
+
 
 /*--------------------INFORMACION--------------*/
 
-/*sección de la ubicación y tamaños de la información*/
+
 
 .info {
     padding: 80px 100px;
@@ -415,7 +409,7 @@ textarea {
 }
 
 /*------------------Galeria-----------------------*/
-/* Establecer estilos para el cuerpo de la página y el contenedor */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -433,13 +427,9 @@ body, html {
 
 .galeria-slider {
     display: flex;
-    
-    /* 100% del ancho de la pantalla */
-
     height: 600px;
-    /* Establece la altura deseada */
     margin: 0 auto;
-    /* Centra el slider horizontalmente */
+   
 }
 
 /* Establecer estilos para las imágenes en el slider */
@@ -454,7 +444,6 @@ body, html {
 /* Establecer estilos al pasar el mouse sobre las imágenes */
 .galeria-slider img:hover {
     width: 100%;
-    /* 100% del ancho del contenedor padre (.galeria-slider) */
     opacity: 1;
     filter: brightness(130%);
 }
@@ -509,11 +498,11 @@ body, html {
     /* Responsive de Navbar */
 
     .navbar {
-        padding: 0 10px; /* Reduce el relleno para conservar espacio */
+        padding: 0 10px; 
     }
 
     .navbar a {
-        margin: 0 10px; /* Reduce el margen de los elementos del menú */
+        margin: 0 10px; 
     }
 
     .header-content {
@@ -546,10 +535,10 @@ body, html {
 
     .service-container {
         flex-direction: column;
-        align-items: center; /* Centra las tarjetas verticalmente */
+        align-items: center; 
     }
 
-    /* Ajusta el ancho de cada tarjeta al 100% del contenedor */
+    
     .service-card {
         flex: 0 1 100%;
         max-width: 100%;
@@ -558,24 +547,24 @@ body, html {
     /*Responsive reservas*/
 
     .etiq-camp {
-        width: 100%; /* Hace que todos los elementos se extiendan al ancho completo */
-        text-align: center; /* Centra el texto en el contenedor */
+        width: 100%; 
+        text-align: center;
     }
 
     input[type="text"],
     input[type="email"],
     textarea {
-        width: 100%; /* Hace que los campos de entrada y textarea ocupen el ancho completo */
+        width: 100%; 
     }
 
     .radio,
     .checkbox {
-        margin-right: 0; /* Elimina el margen derecho para que los elementos estén más juntos */
+        margin-right: 0; 
     }
 
     .checkbox {
         display: flex;
-        flex-direction: column; /* Muestra los checkboxes en columna */
+        flex-direction: column; 
     }
 
     /*Responsive Información*/
@@ -600,34 +589,34 @@ body, html {
     /*Responsive Galería*/
 
     .galeria-slider {
-        padding: 0; /* Elimina el relleno para maximizar el espacio */
+        padding: 0; 
         flex-direction: column;
         align-items: center;
         margin-bottom: 20px;
     }
 
     .galeria-slider img {
-        width: 60%; /* Ajusta el ancho de las imágenes para pantallas más pequeñas */
-        margin: 5px 0; /* Agrega un margen entre las imágenes */
+        width: 60%; 
+        margin: 5px 0; 
     }
 
     /*Responsive footer*/
 
     .footer-container {
-        flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+        flex-wrap: wrap; 
     }
 
     .logo-footer {
-        width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
-        margin-bottom: 20px; /* Agrega un margen inferior para separar de los otros elementos */
+        width: 100%; 
+        margin-bottom: 20px; 
     }
 
     .location,
     .contact-info,
     .horario-de-atencion {
-        flex: 1 1 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
-        border: none; /* Elimina el borde derecho en pantallas más pequeñas */
-        margin-bottom: 20px; /* Agrega un margen inferior para separar de los otros elementos */
+        flex: 1 1 100%; 
+        border: none; 
+        margin-bottom: 20px; 
     }
     
 }
@@ -638,31 +627,31 @@ body, html {
 
     .navbar {
         padding: 0 10px;
-        justify-content: center; /* Centra los elementos en el eje horizontal */
+        justify-content: center; 
     }
 
     .navbar .menu a {
-        display: none; /* Oculta los elementos del menú en pantallas más pequeñas */
+        display: none; 
     }
 
     .menu-icon {
-        display: block; /* Muestra el icono de menú en pantallas más pequeñas */
+        display: block; 
     }
 
     .navbar .img {
         display: block;
-        margin: 0 auto; /* Centra el logo en el eje horizontal */
-        text-align: center; /* Añade este estilo para centrar el texto dentro del contenedor */
+        margin: 0 auto; 
+        text-align: center; 
     }
 
     .navbar .iconos-redes {
-        display: none; /* Puedes ocultar los iconos de redes sociales si lo prefieres */
+        display: none; 
     }
 
     .navbar .menu-icono {
         display: block;
         margin-left: auto;
-        margin-right: 10%; /* Ajusta según sea necesario */
+        margin-right: 10%; 
     }
 
     .navbar .menu-icono i {
@@ -680,7 +669,7 @@ body, html {
 
     .slider-img,
     .slider-txt {
-        width: 30%;
+        width: 50%;
     }
 
     .slider-txt {
