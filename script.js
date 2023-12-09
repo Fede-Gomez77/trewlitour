@@ -128,5 +128,5 @@ function validarFormulario() {
 
     // Si todas las validaciones son exitosas, puedes enviar el formulario
     alert('¡Formulario enviado con éxito!'); // Mensaje de éxito
-    document.getElementById('reservationForm').submit();
+    document.getElementById('reservationForm'); submit();
 }
