@@ -2,7 +2,7 @@
     <html lang="en">
 
     <head>
-        <title>Producto Nuevo</title>
+        <title>Nuevo empleado del mes</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS v5.2.1 -->
@@ -17,28 +17,28 @@
         <main>
             <div class="container" id="app">
                 <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-                    <h2>Editar Producto </h2>
-                    <p>Precio:{{precio}}</p>
+                    <h2>Editar Empleado </h2>
+                    
                     <div class="mb-3">
-                        <label for="id">Id</label>
-                        <input type="number" name="id" id="id" disabled v-model="id">
+                        <label for="idempleado">Idempleado</label>
+                        <input type="number" name="idempleado" id="idempleado" disabled v-model="idempleado">
                     </div>
                     <div class="mb-3">
                         <label for="nombre">Nombre</label>
                         <input type="text" name="nombre" id="nombre" v-model="nombre">
                     </div>
                     <div class="mb-3">
-                        <label for="precio">Precio</label>
-                        <input type="number" name="precio" id="precio" v-model="precio">
+                        <label for="logros">Logros</label>
+                        <input type="text" name="logros" id="logros" v-model="logros">
                     </div>
                     <div class="mb-3">
-                        <label for="stock">Stock</label>
-                        <input type="number" name="stock" id="stock" v-model="stock">
+                        <label for="puntos">Puntos</label>
+                        <input type="number" name="puntos" id="puntos" v-model="puntos">
                     </div>
                     <div class="mb-3">
-                        <label for="imagen">Imagen</label>
-                        <input type="text" name="imagen" id="imagen" v-model="imagen">
-                        <img width="100" :src="imagen" alt="">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" name="fecha" id="fecha" v-model="fecha">
+                        
                     </div>
                     <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
                 </form>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Producto Nuevo</title>
+    <title>Nuevo Empleado del mes</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,24 +18,24 @@
     <main>
         <div class="container" id="app">
         <form> 
-            <h1>Alta de Producto</h1>
+            <h1>Alta de Empleado</h1>
             <div class=" mb-3">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre" v-model="nombre">
         </div>
         <div class="mb-3">
-            <label for="precio">Precio</label>
-            <input type="number" name="precio" id="precio" v-model="precio">
+            <label for="logros">Logros</label>
+            <input type="text" name="logros" id="logros" v-model="logros">
         </div>
 
         <div class="mb-3">
-            <label for="stock">Stock</label>
-            <input type="number" name="stock" id="stock" v-model="stock">
+            <label for="puntos">Puntos</label>
+            <input type="number" name="puntos" id="puntos" v-model="puntos">
         </div>
         <div class="mb-3">
-            <label for="imagen">Imagen</label>
-            <input type="text" name="imagen" id="imagen" v-model="imagen">
-            <img width="100" :src="imagen" alt="">
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha" v-model="fecha">
+           
         </div>
         <button type="button" class="btn btn-success" v-on:click="grabar()">Grabar</button>
         </form>

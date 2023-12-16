@@ -2,18 +2,18 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            productos: [],
+            empleados: [],
             //url:'http://localhost:5000/productos',
             // si el backend esta corriendo local usar localhost 5000(si no lo subieron a pythonanywhere)
-            url: 'http://DanielaST.pythonanywhere.com/productos', // si ya lo subieron a pythonanywhere
+            url: 'DanielaST.pythonanywhere.com/empleados/' + id, // si ya lo subieron a pythonanywhere
             error: false,
             cargando: true,
             /*atributos para el guardar los valores del formulario */
-            id: 0,
+            idempleado: 0,
             nombre: "",
-            imagen: "",
-            stock: 0,
-            precio: 0,
+            logros: "",
+            puntos: 0,
+            fecha: 0,
         }
     },
     methods: {
@@ -22,7 +22,7 @@ createApp({
 
                 .then(response => response.json())
                 .then(data => {
-                    this.productos = data;
+                    this.empleados = data;
                     this.cargando = false
                 })
                 .catch(err => {
@@ -30,8 +30,8 @@ createApp({
                     this.error = true
                 })
         },
-        eliminar(producto) {
-            const url = this.url + '/' + producto;
+        eliminar(empleado) {
+            const url = this.url + '/' + empleado;
             var options = {
                 method: 'DELETE',
             }
@@ -42,14 +42,14 @@ createApp({
                 })
         },
         grabar() {
-            let producto = {
+            let empleado = {
                 nombre: this.nombre,
-                precio: this.precio,
-                stock: this.stock,
-                imagen: this.imagen
+                logros: this.logros,
+                puntos: this.puntos,
+                fecha: this.fecha
             }
             var options = {
-                body: JSON.stringify(producto),
+                body: JSON.stringify(empleado),
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 redirect: 'follow'
@@ -61,7 +61,7 @@ createApp({
                 })
                 .catch(err => {
                     console.error(err);
-                    alert("Error al Grabarr")
+                    alert("Error al Grabar")
 
                 })
         }

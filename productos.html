@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Empleado del mes</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,7 +15,7 @@
     </header>
     <main>
         <div id="app" class="container">
-            <h1>Productos</h1>
+            <h1>Empleados</h1>
             <br>
             <a class="btn btn-primary" href="producto_nuevo.html">Nuevo</a>
             <br><br>
@@ -33,28 +33,27 @@
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th scope="col">Id</th>
+                                    <th scope="col">Idempleado</th>
                                     <th scope="col">Nombre</th>
-                                    <th scope="col">Precio</th>
-                                    <th scope="col">Stock</th>
-                                    <th scope="col">Imagen</th>
-                                    <th scope="col">Acciones</th>
+                                    <th scope="col">Logros</th>
+                                    <th scope="col">Puntos</th>
+                                    <th scope="col">Fecha</th>
+                                
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="" v-for="producto in productos">
-                                    <td scope="row">{{producto.id}}</td>
-                                    <td>{{producto.nombre}}</td>
-                                    <td>{{producto.precio}}</td>
-                                    <td>{{producto.stock}}</td>
-                                    <td>
-                                        <img width="60" src="producto.imagen" alt="producto.nombre">
-                                    </td>
+                                <tr class="" v-for="empleado in empleados">
+                                    <td scope="row">{{empleado.id}}</td>
+                                    <td>{{empleado.nombre}}</td>
+                                    <td>{{empleado.logros}}</td>
+                                    <td>{{empleado.puntos}}</td>
+                                    <td>{{empleado.fecha}}</td>
+                                    
                                     <td>
                                         <a class="btn btn-primary"
-                                            :href="'producto_update.html?id='+ producto.id">Editar</a>
+                                            :href="'producto_update.html?id='+ empleado.idempleado">Editar</a>
                                         <button type="button" class="btn btn-danger"
-                                            v-on:click="eliminar(producto.id)">Eliminar</button>
+                                            v-on:click="eliminar(empleado.idempleado)">Eliminar</button>
                                     </td>
                                 </tr>
                             </tbody>
