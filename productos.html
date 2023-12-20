@@ -51,19 +51,12 @@
     </header>
     <main class="container-form">
         <div id="app" class="products-form">
-            <h1>Empleados</h1>
-            <br>
-            <a class="btn btn-primary" href="producto_nuevo.html">Nuevo</a>
-            <br><br>
-
-            <div v-if="error">
-                <p>Lo sentimos , ........</p>
+            <div class="title-form">
+                <h1>Empleados del mes</h1>
             </div>
-            <div v-else>
-                <section v-if="cargando">
-                    <div class="spinner-border"></div>
-                    <p>Cargando .....</p>
-                </section>
+            <br>
+            <a class="btn-2" href="producto_nuevo.html">Nuevo</a>
+            <br><br>
                 <section v-else>
                     <div class="table-responsive">
                         <table class="table table-bordered">
@@ -74,7 +67,7 @@
                                     <th scope="col">Logros</th>
                                     <th scope="col">Puntos</th>
                                     <th scope="col">Fecha</th>
-                                
+                                    <th scope="col">Edición</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -84,12 +77,11 @@
                                     <td>{{empleado.logros}}</td>
                                     <td>{{empleado.puntos}}</td>
                                     <td>{{empleado.fecha}}</td>
-                                    
                                     <td>
-                                        <a class="btn btn-primary"
+                                        <a class="btn-2"
                                             href="producto_update.html">Editar</a>
-                                        <button type="button" class="btn btn-danger"
-                                            v-on:click="eliminar(empleado.idempleado)">Eliminar</button>
+                                        <input type="button" class="btn-3"
+                                            v-on:click="eliminar(empleado.idempleado)" value="Eliminar">
                                     </td>
                                 </tr>
                             </tbody>
