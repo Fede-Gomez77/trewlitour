@@ -1,52 +1,112 @@
 <!doctype html>
-    <html lang="en">
+    <html lang="es">
 
     <head>
         <title>Nuevo empleado del mes</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagenes\favicon-16x16.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="estilo.css">
     </head>
 
     <body>
-        <header id="header">
-            <!-- place navbar here -->
+        <header>
+                <nav class="navbar">
+                    <div>
+                        <a href="index.html">
+                            <img class="logo-2" src="imagenes/logoprima.png" alt="logo de la empresa" width="300" height="300">
+                        </a><!--Acá la idea es hacer clic sobre el ícono de la empresa y que retorne al inicio de la página(RCZ))-->
+                    </div>
+                    <!-- alt= "Se agrega una descripción de la imagen, para el caso que no sea pueda mostrar, o para personas con capacidades diferentes" -->
+    
+                
+                    <div class="menu">
+                        <a href="index.html" class="home-link">Inicio</a>
+                        <a href="index.html#servicios">Servicios</a>
+                        <a href="reservas.html">Reservas</a>
+                        <a href="index.html#empresa">Empresa</a>
+                        <a href="index.html#contacto">Contacto</a>
+                    </div>
+                    <div class="iconos-redes"><!--Cada ícono redirige en una nueva pestaña a la página correspondiente-->
+                        <div class="social">
+                            <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/542235469303" target="blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="menu-icono">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
         </header>
-        <main>
-            <div class="container" id="app">
-                <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-                    <h2>Editar Empleado </h2>
-                    
-                    <div class="mb-3">
+
+        <main class="products">
+            <div class="products-form" id="app">
+                <form>
+                    <div class="title-form">
+                        <h1>Editar Empleado </h1>
+                    </div>
+                    <div class="etiq-camp">
                         <label for="idempleado">Idempleado</label>
                         <input type="number" name="idempleado" id="idempleado" disabled v-model="idempleado">
                     </div>
-                    <div class="mb-3">
-                        <label for="nombre">Nombre</label>
+                    <div class="etiq-camp">
+                        <label for="firstname">Nombre</label>
                         <input type="text" name="nombre" id="nombre" v-model="nombre">
                     </div>
-                    <div class="mb-3">
-                        <label for="logros">Logros</label>
+                    <div class="etiq-camp">
+                        <label for="success">Logros</label>
                         <input type="text" name="logros" id="logros" v-model="logros">
                     </div>
-                    <div class="mb-3">
-                        <label for="puntos">Puntos</label>
+                    <div class="etiq-camp">
+                        <label for="points">Puntos</label>
                         <input type="number" name="puntos" id="puntos" v-model="puntos">
                     </div>
-                    <div class="mb-3">
-                        <label for="fecha">Fecha</label>
+                    <div class="etiq-camp">
+                        <label for="date">Fecha</label>
                         <input type="date" name="fecha" id="fecha" v-model="fecha">
                         
                     </div>
-                    <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
+                    <input type="button" class="btn-1" v-on:click="modificar()" value="Guardar">
                 </form>
 
             </div>
         </main>
-        <footer>
-            <!-- place footer here -->
+        <footer class="footer-container" id="contacto">
+            <div class="logo-footer">
+                <a href="index.html">
+                    <img src="imagenes/logoprima2.png" alt="">
+                </a>
+            </div>
+            <div class="location">
+                <h3>Ubicación</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Av. Bartolomé Mitre 6678, Wilde, Buenos Aires, Argentina</p>
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7800.808729382105!2d-58.3176132976756!3d-34.70931498886773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a332701f8318f7%3A0xdceba27733c76aad!2sAv.%20Bartolom%C3%A9%20Mitre%206678%2C%20B1875ABJ%20Wilde%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1697747639187!5m2!1ses-419!2sar"
+                    width="300" height="80" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-info">
+                <h3>Contacto</h3>
+                <p class="icon-footer">
+                    <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/542235469303" target="blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </p>
+                <p><i class="fa-solid fa-phone"></i> 115496246</p>
+                <p><i class="fa-solid fa-phone"></i> 116219661</p>
+            </div>
+            <div class="horario-de-atencion">
+                <h3>Horario de atención</h3>
+                <p><i class="fa-solid fa-clock"></i> Lunes a Viernes: 9:00hs - 18:00hs</p>
+                <p><i class="fa-solid fa-clock"></i> Sábados: 9:00hs - 13:00hs</p>
+            </div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
